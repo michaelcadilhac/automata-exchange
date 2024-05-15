@@ -1,0 +1,22 @@
+#+TITLE: 19.7 Membership in logical classes for (succinct) finite automata
+#+AUTHOR: Charles Paperman
+#+EMAIL: charles.paperman@univ-lille.fr
+#+DATE: <2019-07-18 19:07>
+#+LAYOUT: post
+#+TAGS: automata, logic, descriptional complexity
+
+Finite automata can be represented concisely in many way, including enriching
+their description with bounded-size stacks and registers, by allowing them to be
+two-way, etc...
+
+Little is known of the complexity of checking membership of those representation of
+finite automaton into logical formalism (such as LTL, First-Order Logic). Most
+of the time, classical algorithms relies on testing algebraic properties of the
+transition semigroup of the automaton. The transition semigroup itself is
+exponential in the size of the automaton. A straight forward application of
+those methods to concise representation will lead to tower of exponential
+algorithms.
+
+For specific kind of concise representations, smarter algorithms could lead to
+only an exponential blowup.
+

@@ -1,0 +1,34 @@
+#+TITLE: 20.6 Branching Immediate Observation nets
+#+AUTHOR: Chana Weil-Kennedy
+#+EMAIL: chana.weilkennedy@in.tum.de
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: petri nets
+
+Branching Immediate Observation (BIO) nets are a subclass of Petri nets defined
+by their transitions, which are of the form $|{}^\bullet t - t^{\bullet}| \le
+1$. This multiset subtraction means that all input places of $t$ with arc weight
+$k$ are also output places of $t$ with arc weight $k$, except for one which may
+have input arc weight $k$ and output arc weight $k-1$. BIO nets generalize Basic
+Parallel Processes (BPP) nets and Immediate Observation (IO) nets - a token can
+“branch” into any number of tokens as in BPP, but may need to “observe” that
+another token is in a certain place to proceed with its transition as in IO.
+
+{{{teaser_end}}}
+
+BIO nets have a non-semilinear reachability relation but a reachability problem
+which is PSPACE-complete. This makes BIO nets the first natural net class with
+non-semilinear reachability relation for which the reachability problem is
+provably simpler than for general Petri nets.  Additionally, although the
+reachability relation is not flat (in the sense of [Leroux, Sutre, 05]), it is
+locally flat (specifically it is $pre^*$ flat) allowing the use of efficient
+existing model checking tools with acceleration techniques like FAST [Bardin et
+al., 03].
+
+We think this is an interesting class, and we are looking both for application
+domains for BIO nets (e.g. in the direction of chemical reaction networks) and
+for consequences of this result in other domains that have problems connected to
+the Petri net reachability problem (e.g. data nets, formal languages, process
+calculi…).
+
+(For more information see https://arxiv.org/abs/2001.09966)

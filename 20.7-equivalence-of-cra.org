@@ -1,0 +1,18 @@
+#+TITLE: 20.7 Equivalence of Cost Register Automata: the quest for decidability
+#+AUTHOR: Michaël Cadilhac
+#+EMAIL: michael@cadilhac.name
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: cost register automata
+
+Consider the model introduced in [[file:19.1-ccra/][this problem]].  It is mentioned therein that
+equivalence is undecidable for that model.  We ask what further restrictions we
+can impose on that model to make equivalence decidable.
+
+If the $\min$ operation is removed, then this is known to lead to decidability
+[Alur et al.'13].  But as soon as we have $\min$, we don't know of a model with
+decidable equivalence.
+
+We conjecture that it is decidable is the CRA is /ordered/; this means that
+the registers can be ordered, say $x_1, x_2, \ldots, x_n$, such that for all
+updates, $x_i$ is only updated with registers $x_j$ for $j \geq i$.

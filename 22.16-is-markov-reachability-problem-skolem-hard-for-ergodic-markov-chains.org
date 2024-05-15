@@ -1,0 +1,16 @@
+#+TITLE: 22.16 Is Markov reachability problem Skolem-Hard for Ergodic Markov chains?
+#+AUTHOR: S. Akshay
+#+EMAIL: akshayss@cse.iitb.ac.in
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: Skolem problem, Markov chains
+
+Given a Markov chain $M$, an initial
+distribution $u$ and target distribution $v$, and a rational number $r$,
+consider the problem of checking if there exists an $n$ such that $u M^n v
+=r$. This problem is known to be as hard as the Skolem problem of LRS. However,
+the reduction requires the Markov chain to be non-ergodic, in particular it is
+reducible and periodic. If we now assume the Markov chain to be irreducible and
+aperiodic (a natural assumption that is often used since forever!), does it
+remain hard?! Both yes or no answers would be very interesting and have
+consequences to model checking of probabilistic linear dynamical systems.

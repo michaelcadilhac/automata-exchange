@@ -1,0 +1,16 @@
+#+TITLE: 20.11 The sequential flow problem
+#+AUTHOR: Pierre Ohlmann
+#+EMAIL: ohlmann@irif.fr
+#+DATE: <2020-11-03 Tue>
+#+LAYOUT: post
+#+TAGS: population protocols, complexity
+
+The sequential flow problem (SFP) is a simple and natural reachability problem
+which was initially formalized for solving questions related to population
+protocols, but has independent interest. We now know that SFP is PSPACE-hard,
+and in EXPSPACE, but its precise complexity remains open.  The following poster
+gives more background.
+
+{{{teaser_end}}}
+
+[[file:poster.png]]

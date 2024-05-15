@@ -1,0 +1,11 @@
+#+TITLE: 20.1 Universality of letter-bounded CFLs
+#+AUTHOR: Moses Ganardi
+#+EMAIL: ganardi@mpi-sws.org
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: context-free grammars, pushdown automata, complexity
+
+- Input: a context-free grammar for a language $L \subseteq a_1^* \dots a_n^*$ ($n$ is part of the input)
+- Question: Is $L = a_1^* \dots a_n^*$?
+
+What is the complexity of the problem?

@@ -1,0 +1,15 @@
+#+TITLE: 22.5 Decidability of $(\min,+)$-weighted automata determinization
+#+AUTHOR: Shaull Almagor
+#+EMAIL: shaull@cs.technion.ac.il
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: weighted automata
+
+Is the following problem decidable: Given $A$, a weighted automaton (WA) over
+the $(\min,+)$ semiring, answer whether $A$ has an equivalent deterministic WA?
+
+/Remarks:/ The problem is equivalent when considering only automata with
+weights in $\{0,1\}$ (a.k.a. distance automata).  The problem is known to be
+decidable for polynomially-ambiguous WA.  For the general case of
+exponentially-ambiguous WA, we don't even have any interesting examples where
+determinization incurs a significant state explosion.

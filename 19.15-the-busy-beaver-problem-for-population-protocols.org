@@ -1,0 +1,23 @@
+#+TITLE: 19.15 The busy beaver problem for population protocols
+#+AUTHOR: Javier Esparza
+#+EMAIL: esparza@in.tum.de
+#+DATE: <2019-07-18 19:15>
+#+LAYOUT: post
+#+TAGS: population protocols
+
+Population protocols are a model of distributed computation by indistinguishable
+agents, close to VASs. We consider population protocols with one input
+state. These protocols compute predicates $\mathbb{N} \rightarrow \{0,1\}$. (For definitions
+see https://arxiv.org/abs/1801.00742)
+
+For every $n \geq 1$, let $f(n)$ be the largest number such that some protocol with
+at most $n$ states computes the predicate $x < f(n)$.
+
+{{{teaser_end}}}
+
+It is shown in the above paper that $f(n) \in 2^{2^{\Omega(n)}}$ for protocols with
+  leaders. This is all we know about $f(n)$.
+
+Open problems:
+- Give a bound on $f(n)$ for protocols with leaders.
+- Give a bound on $f(n)$ for protocols without leaders.

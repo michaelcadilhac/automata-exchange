@@ -1,0 +1,11 @@
+#+TITLE: 22.12 3-decomposition Conjecture
+#+AUTHOR: Irene Heinrich
+#+EMAIL: heinrich@mathematik.tu-darmstadt.de
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: graphs
+
+First postulated by Hoffmann-Ostenhof (approx. 2010).
+
+Prove the following conjecture: Every connected cubic graph can be decomposed
+into a spanning tree, a disjoint union of cycles, and a matching.

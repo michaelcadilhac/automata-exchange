@@ -1,0 +1,28 @@
+#+TITLE: 22.7 Equivalent k-HD-TA for a given 1-NTA
+#+AUTHOR: Sougata Bose
+#+EMAIL: sougata.bose@liverpool.ac.uk
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: timed automata
+
+/Question:/ Given a non-deterministic timed automata with 1
+clock(1-NTA) and reachability acceptance condition, decide whether there exists
+an equivalent history deterministic timed automata with k clocks ($k$-HDTA),
+where $k$ can be fixed or arbitrary?
+
+Motivation: The classes of 1-NTA, deterministic timed automata (DTA),
+history-deterministic timed automata (HDTA) all have decidable language
+inclusion problems, though the complexity of inclusion for 1-NTA is
+non-primitive recursive. However, the class 1-NTA is incomparable to DTA and
+HDTA.
+
+{{{teaser_end}}}
+
+Whether a given 1-NTA is equivalent to some $k$-DTA is decidable, but it the
+problem becomes undecidable if the number of clocks in the DTA is not fixed
+beforehand. The proposed question is simply extending this to HD case instead of
+deterministic.
+
+/Remarks:/ It is unknown whether HDTA is a strictly bigger class than
+DTA. Showing that the two classes (DTA and HDTA) are expressively equivalent
+would settle the problem by reduction to the DTA case.

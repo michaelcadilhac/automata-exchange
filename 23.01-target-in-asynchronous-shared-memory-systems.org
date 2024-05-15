@@ -1,0 +1,28 @@
+#+TITLE: 23.01 TARGET in asynchronous shared-memory systems
+#+AUTHOR: Nicolas Waldburger
+#+EMAIL: nicolas.waldburger@irisa.fr
+#+DATE: <2023-09-16>
+#+LAYOUT: post
+#+TAGS: verification, automata, parameterized verification
+
+An asynchronous shared-memory system is composed of \(n\) processes that interact by reading from and writing to a shared memory. This shared memory is composed of \(r\) registers, each containing one symbol at a time from the finite alphabet \(D\). All processes are anonymous and identical; they are described by the same finite automaton, called protocol. The transitions of the automaton are labelled by actions of the form \(read_i(d)\) or \(write_i(d)\) with \(i \in \{1,\dots,r\}\) and \(d \in D\).
+
+A step of the execution corresponds to some process taking a transition of the automaton and, doing so, reading from or writing to some register.
+
+
+
+In the initial configuration of size \(n\), all \(n\) processes are on state \(q_0\) while all registers have initial value \(d_0\). TARGET asks whether there exists \(n \geq 1\) such that, from the initial configuration of size \(n\), there is an execution that puts all processes on some distinguished state \(q_f\). This problem is known to be NP-complete in the general case, and in PTIME when \(r=1\).
+
+
+
+Questions: Is TARGET XP with respect to \(r\), i.e., is it solvable in polynomial time when \(r\) is fixed? Is it FPT with respect to \(r\), i.e., can it be solved in time \(O(f(r) p(|P|))\) with \(p\) a polynomial and \(P\) the protocol?
+
+
+
+We have established during Autoboz that the problem is in fct W[2]-hard with respect to r. Remain open questions are:
+
+- is it FPT with respect to \(r + |D|\)?
+
+- is it in XP with respect to \(r\)?
+
+- in particular, is in in PTIME for \(r = 2\)?

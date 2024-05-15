@@ -1,0 +1,14 @@
+#+TITLE: 22.17 Eventual non-negativity of Matrices
+#+AUTHOR: S. Akshay
+#+EMAIL: akshayss@cse.iitb.ac.in
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: algebra
+
+Consider the problem: given a matrix $M$ over integers, does there
+exist a natural number $n$ such that $M^n$ has only non-negative entries? Is
+this question as hard as ultimate positivity? Note that if you consider two
+matrices $M, N$ and ask if there exists $n$ such that $M^n+ N^n$ has only
+non-negative entries, that problem is indeed equivalent to ultimate positivity,
+but with a single matrix, we do not know. Note also that if we ask strict
+positivity of entries, the single matrix case becomes easy!

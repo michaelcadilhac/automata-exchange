@@ -1,0 +1,17 @@
+#+TITLE: 22.2 Paired Counter Automata
+#+AUTHOR: Andrei Draghici
+#+EMAIL: andrei.draghici@stcatz.ox.ac.uk
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: automata, counter machines
+
+Consider a DFA $A$ together with $d$ pairs off counters
+$(x_1,y_1),\dots,(x_d,y_d)$. Each transition of $A$ is labelled with an update
+function for all counters. The update functions for the x-counters are
+$id:n\rightarrow n$ and $++ : n\rightarrow n+1$. The update function for the
+y-counters are $id:n\rightarrow n$, $\times 2:n\rightarrow 2n$ and $\times
+2+1:n\rightarrow 2n+1$. An accepting configuration is a configuration in which
+we are in an accepting state and all the counter pairs have the same value,
+i.e. $x_1=y_1,\dots,x_d=y_d$.
+
+/Question:/ is the emptiness problem for this class of automata decidable?

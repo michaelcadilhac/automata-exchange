@@ -1,0 +1,28 @@
+#+TITLE: 19.16 Weak validation of tree-languages by extended automata
+#+AUTHOR: Charles Paperman
+#+EMAIL: charles.paperman@univ-lille.fr
+#+DATE: <2019-07-18 19:16>
+#+LAYOUT: post
+#+TAGS: XML, automata, trees
+
+The weak validation problem is an open problem stated in 2007 by Segoufin and
+Sirangelo. The problem is about checking if a regular langage of trees, seen as
+a languages of word (with an XML encoding), can be /validated/ by a finite
+automaton with the assumption that the input is a correct tree encoding.  More
+formally, let $T$ be the set of words encoding correct trees, $K$ be a regular
+language of tree with $\text{XML}(K)$ the associate languages of words.  Can we
+decide if there exists a regular langage of words $L$ such that
+$L\cap T =\text{XML}(K)$.
+
+{{{teaser_end}}}
+
+Weak validation sounds out of reach and a very difficult question although
+generalisation of the problem considering extended version of finite automata
+(e.g. Parikh automaton) could be in same time easier to deal with and provides a
+more interesting class of weakly validating regular languages of trees.
+
+Some recent work on a close subject:                                                                     
+
+Eryk Kopczyński. 2016. Invisible Pushdown Languages. LICS '16
+
+

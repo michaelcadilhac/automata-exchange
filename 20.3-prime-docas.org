@@ -1,0 +1,48 @@
+#+TITLE: 20.3 Prime DOCAs
+#+AUTHOR: Patrick Totzke
+#+EMAIL: totzke@liverpool.ac.uk
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: pushdown automata, counter machines
+
+A Deterministic One-Counter Automaton (DOCA) is a [[https://en.wikipedia.org/wiki/Deterministic_pushdown_automaton][DPDA]] with single letter stack
+alphabet.  They can be used to define (context-free, word) languages by reaching
+an accepting state and counter 0.
+
+{{{teaser_end}}}
+
+Let's call a language $L\subseteq\Sigma^*$, given as the language of some DOCA
+$A$ /decomposable/ if there exist languages $L_0,L_1,\ldots,L_k$ such that
+
+1. $L \subseteq L_i$ for every $i\le k$,
+2. every $L_i$ is "smaller"
+3. $L = \bigcap_{i=0}^k L_i$
+
+Here, "smaller" means it is represented by a DOCA with strictly fewer states than $A$.
+A language that is not decomposable is /prime/.
+
+*The question* is if it is decidable to check if a given a language (DOCA) is it
+prime.  Notice that one can guess a decomposition into "smaller" automata, but
+not directly verify such a guess, because checking emptiness of intersections is
+undecidable for DOCA.
+
+
+* Examples
+
+An example for a prime language is $a^nb^n$.  It is recognized by a two-state
+DOCA (accepting with the second state and counter zero).  Yet, any language
+$L_i\supseteq a^nb^n$, recognized by a single-state DOCA, must include the word
+$w=abab$.  On the other hand, $a^nb^nb^mc^m$ can be shown to be DOCA but not
+prime.
+
+
+* Reference
+
+The question is really if the work of [[https://www.cs.cmu.edu/~jmosheif/publications/PrimeLanguages.pdf][Kupfermann & Mosheiff, MFCS'13]] can
+be sensibly extended to infinite Automata. They consider regular languages
+defined by [[https://en.wikipedia.org/wiki/Deterministic_finite_automaton][DFA]], minimal wrt. their index (number of states).  They show
+decidability by brute force, which works in this way only for finite automata: A
+language $A$ is prime iff there is a word $w\not\in A$ but in every $B\supseteq
+A$ that satisfies condition 2.  There are finitely many such $B$ so one can take
+the big product and derive a bound on the length of the shortest such prime
+witness $w$ (This uses the finite-index!).

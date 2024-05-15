@@ -1,0 +1,30 @@
+#+TITLE: 22.9 Constructive Zermelo's Problem
+#+AUTHOR: Vincent Michielini
+#+EMAIL: vincent.michielini@uni.opole.pl
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: logic
+
+A /choice function/ over a set $E$ is a function $f$ that assigns to every
+non-empty subset of $E$ one of its elements (of the subset). If $E$ is in fact a
+$\Sigma$-structure, we say that $f$ is /regular/ if it can be defined by an
+MSO[$\Sigma$] formula $\varphi(X,x)$, where the first variable $X$ refers to
+subsets, and the second variable $x$ i.e. refers to elements.\\
+Naturally, if a $\Sigma$-structure admits a well-order which can be defined by
+an MSO[$\Sigma$] formula $\psi(x,y)$, then one can define such a choice function
+$\varphi(X,x)$ that says "I take the least element of X with respect to $\psi$".
+
+The problem, originally stated in my PhD, asks if the reciprocal is true: if a
+$\Sigma$-structure $E$ admits a regular choice function $\varphi(X,x)$, does it
+necessarily also admit a regular well order $\psi(x,y)$?
+
+{{{teaser_end}}}
+
+I conjecture that it is the case. Moreover, I have also hope for a strengthened
+constructive version, stated as follow:
+
+/Conjecture/: Let $\Sigma$ be a signature. There exists a procedure that
+inputs an MSO[$\Sigma$] formula $\varphi(X,x)$ and outputs another one,
+$\psi(x,y)$, such that for every $\Sigma$-structure $E$, if $\varphi(X,x)$ is a
+regular choice function over $E$ then $\psi(x,y)$ is a regular well order over
+$E$.

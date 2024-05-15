@@ -1,0 +1,31 @@
+#+TITLE: 20.12 Succinctness of GFG pushdown automata
+#+AUTHOR: Martin Zimmermann
+#+EMAIL: Martin.Zimmermann@liverpool.ac.uk
+#+DATE: <2020-11-03 Tue>
+#+LAYOUT: post
+#+TAGS: pushdown automata, CFL, games
+
+Valiant showed that the succinctness gap between deterministic and
+nondeterministic pushdown automata (restricted to deterministic contextfree
+languages) is nonrecursive, i.e., there is no computable function $f$ with the
+following property: If the language of a pushdown automaton $A$ is deterministic
+contextfree, then there is a deterministic pushdown automaton of size $f(|A|)$
+recognizing $L(A)$.
+
+Recently, good-for-games pushdown automata have been introduced, whose
+expressive power is strictly between the deterministic contextfree and the
+contextfree languages.
+
+{{{teaser_end}}}
+
+This new class of automata opens new succinctness gaps, i.e.,
+- between deterministic pushdown automata and good-for-games pushdown automata
+  (restricted to deterministic contextfree languages),
+- between good-for-games pushdown automata and pushdown automata (restricted to
+  deterministic contextfree languages), and
+- between good-for-games pushdown automata and pushdown automata (restricted to
+  good-for-games contextfree languages).
+
+
+The extent of these new gaps is open, but Valiant's result implies that at least
+one of the first two gaps has to be nonrecursive.

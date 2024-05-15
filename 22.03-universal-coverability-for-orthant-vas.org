@@ -1,0 +1,31 @@
+#+TITLE: 22.3 Universal coverability for Orthant VAS
+#+AUTHOR: David Purser
+#+EMAIL: d.purser@uw.edu.pl
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: VASS, reachability
+
+An orthant is a region in $\mathbb{R}^d$ in which every vector in the orthant
+has the same sign in each dimension. In a vector addition system sum vectors
+taken non-deterministically from a given set, providing the sum remains in the
+positive orthant (all vectors positive). Z-VAS can visit all orthants, but the
+set of vectors that can be applied is the same in every orthant.
+
+An /orthant VAS/ has a different set of vectors for each orthant. Any vector
+from the set of the current orthant can be applied, the result of which may be
+in the same orthant, or another orthant.
+
+{{{teaser_end}}}
+
+The sets of vectors are monotonically increasing; so that if a vector can be
+applied in some orthant, it can also be applied in every orthant with additional
+positive dimensions.
+
+The coverability problem asks whether the positive orthant can be reached from a
+given point and is undecidable. Thus too is reachability.
+
+The universal coverability problem asks whether the positive orthant can be
+reached from every starting point. Is known to be decidable in dimension 3.
+
+/Question: can this be extended to dimension 4+. Is it also undecidable in
+general?/

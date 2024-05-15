@@ -1,0 +1,107 @@
+#+TITLE: 19.1 Deciding upperboundedness of \(\bbZ\)-CCRA
+#+AUTHOR: Michaël Cadilhac
+#+EMAIL: michael@cadilhac.name
+#+DATE: <2019-07-18 19:01>
+#+LAYOUT: post
+#+TAGS: cost register automata, counter machines, weighted automata
+
+A cost register automaton (CRA) over $(\bbZ, \min, +)$ is a DFA equipped with a
+finite number of registers that take values in $\bbZ$.  Each transition induces
+a transformation of the registers formulated with $\min$ and $+$; for instance
+$x \leftarrow \min\{x, y+3\} + z$.  Accepting states can then output one of the
+registers.
+
+{{{teaser_end}}}
+
+Consider the model in which:
+- Each update uses only $\min$'s and addition /with constants/,
+- For each transition, no register appears twice on the right-hand side of the updates.
+
+This model, which we call $\bbZ$-CCRA (the extra C standing for
+/copyless/), can express for instance:
+\[f(a^{i_1}\#\ldots\#a^{i_n}) = \min \{i_1, \ldots, i_n\}\enspace,\]
+but couldn't express $g(b^i\#w) = i + f(w)$ —this would require either copying
+$i$, or adding two registers.
+
+For weighted automata people, note that this model is equivalent to this, where
+\(\mathcal{W}\) is a deterministic WA over \((\mathbb{Z}, \min, +)\):
+
+
+#+name: repath
+#+begin_src shell :var data="" :var attr_html="" :results output silent :exports results
+  [ -z "$attr_html" ] || echo "#+ATTR_HTML: $attr_html"
+  echo "$data" | sed s@file:source@https://autoboz.org/open-problems@
+#+end_src
+
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usetikzlibrary{automata,positioning,calc,through,fit,decorations.pathreplacing}
+#+header: :file source/img/wa.svg
+#+header: :dvisvgm
+#+header: :results raw
+#+header: :post repath(data=*this*, attr_html=":style margin-left: auto; margin-right: auto; display: block;")
+#+header: :buffer no
+#+BEGIN_SRC latex
+  %% Automata
+
+  \definecolor{backstate}{RGB}{204,204,255}
+  \definecolor{drawstate}{RGB}{128,128,255}
+
+  \newenvironment{smallautomaton}[1][]{
+    \begin{center}%\vspace{-.8\baselineskip}
+      \begin{inlinesmallautomaton}[{#1}]}
+      {
+      \end{inlinesmallautomaton}
+    \end{center}
+  }
+
+  \newenvironment{inlinesmallautomaton}[1][]{
+    \begin{tikzpicture}[shorten >=1pt,initial text=,
+      every state/.style={fill=backstate,draw=drawstate,line width=.4pt},
+      node distance=1cm,state/.append style={minimum size=1em, inner sep=0pt},%
+      smallstate/.style={state,minimum size=.5em,inner sep=0pt},on grid,auto,#1]}
+    {\end{tikzpicture}
+  }
+
+    \begin{smallautomaton}
+      \node[circle, draw, minimum width=1.7cm] {DFA};
+      \node[smallstate, initial] at (-0.6cm, 0) (ai) {};
+      \node[smallstate] at (0, 0.5cm) (a1) {};
+      \node[smallstate] at (0.1cm, -0.4cm) (a2) {};
+      \node[smallstate] at (0.5cm, -0.1cm) (a3) {};
+
+      \node at (-0.9cm,0.9cm) {$\mathcal{A}$};
+
+      \path[->] (a2) edge [bend right] node [below] {\scriptsize \(a\)} (a3)
+      (ai) edge [bend left] node [above=.01cm,pos=0.2] {\scriptsize \(b\)} +(0.3cm, 0.3cm)
+      (ai) edge [bend right] node [below=.01cm,pos=0.2] {\scriptsize \(a\)} +(0.3cm, -0.3cm);
+
+      \begin{scope}[xshift=2.4cm]
+        \node[circle, draw, minimum width=1.7cm] (b) {DetWA};
+        \node[smallstate] at (-0.1cm, 0.55cm) (b1) {};
+        \node[smallstate,accepting] at (-0.2cm, -0.4cm) (b2) {};
+        \node[smallstate] at (0.5cm, -0.3cm) (b3) {};
+
+        \path[->] (b1) edge node [above=0.1cm,sloped] (x) {} +(.5cm, -.35cm);
+        \node at (x) {\scriptsize \(a,\!1\)};
+        \node at (0.9cm,0.9cm) {$\mathcal{W}$};
+      \end{scope}
+
+      \path[->] (a3) edge node [above,pos=0.4] {\scriptsize \(\epsilon\)} (b2)
+      (a3) edge [bend right=50] node [below, pos=0.4] {\scriptsize \(\epsilon\)} (b3)
+      (a1) edge node [above] {\scriptsize \(\epsilon\)} (b1);
+
+    \end{smallautomaton}
+#+END_SRC
+
+
+In [1], we showed that equivalence is undecidable for that model (even, and this
+is much more interesting, when restricted to $\bbN$).  We also showed that it is
+undecidable, given a $\bbZ$-CCRA, to decide whether the function it expresses is
+always negative.
+
+*Question:* Is it decidable, given a $\bbZ$-CCRA, whether the function it
+expresses is upper-bounded?  That is, whether $(\exists c)(\forall w)[f(w) \leq
+c]$.
+
+[1] S. Almagor, M. Cadilhac, F. Mazowiecki, G. A. Pérez.  Weak Cost Register
+Automata are Still Powerful. DLT'18. [[https://arxiv.org/abs/1804.06336]]

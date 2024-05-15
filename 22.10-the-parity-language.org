@@ -1,0 +1,33 @@
+#+TITLE: 22.10 The Parity Language
+#+AUTHOR: Corentin Barloy
+#+EMAIL: corentin.barloy@inria.fr
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: logic, circuits
+
+We study a combinatorial property of the Parity language (the set of binary
+words with an even number of 1s).  Let $n$ be a word size, $\textit{Parity}_n$
+be the subset of Parity of words of length $n$, $\overline{\textit{Parity}}_n$
+be the subset of the complement of Parity of words of length $n$.
+
+For two subset $A$ and $B$, we say that $B$ has a limit in $A$ if there is a
+word $u\in A$ such that for every position $i$ there exists a word $v$ in $B$
+that matches $u$ on that position (ie. $u_i = v_i$).
+
+{{{teaser_end}}}
+
+Let $p$ be any polynomial. Show:
+$$\exists A \subseteq \textit{Parity}_n, \ \forall A'\subseteq A,
+\ |A'|\geq \frac{|A|}{p(n)}, \exists B \subseteq \overline{\textit{Parity}}_n,$$
+$$\forall B' \subseteq B, \ |B'|\geq \frac{|B|}{p(n)},\ B' \textit{ has a limit
+in } A'$$
+
+Note that the set $B$ can be chosen accordingly to the choice of $A'$.
+
+This property is useful while studying the expressive power of depth-3 boolean
+circuits in $\textit{AC}^0$.  A similar property has been proved for depth-3
+circuits with bounded top fan-in in a recent LICS paper, and can be traced back
+to Hastad, Jukna and Pudlak.  Here, the goal is to extend this combinatorial
+statement for a bigger class of languages, and for a more general notion of
+limit to describe precisely the regular languages definable thanks to depth-4
+circuits with bounded top fan-in.

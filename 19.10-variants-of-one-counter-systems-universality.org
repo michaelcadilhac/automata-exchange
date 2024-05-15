@@ -1,0 +1,30 @@
+#+TITLE: 19.10 Variants of one-counter systems universality
+#+AUTHOR: Patrick Totzke
+#+EMAIL: totzke@liverpool.ac.uk
+#+DATE: <2019-07-18 19:10>
+#+LAYOUT: post
+#+TAGS: counter machines, VASS, pushdown automata
+
+Problem 1:[fn:1] Given a 1-VASS, let $L_n$ be its language where
+acceptance is by reaching a final state from a fixed initial state and initial
+counter value $n$. Does there exist $n$ such that $\Sigma^* = L_n$ ?
+
+Problem 2: Given a 1-VASS, let $L^n$ be the language of the $n$-bounded system
+(the NFA where values 0..n are hard-coded) where acceptance is by reaching a
+final state from a fixed initial configuration.  Does there exist $n$ such that
+$\Sigma^* \subseteq L^n$?
+
+{{{teaser_end}}}
+
+Questions:
+- Are these problems decidable? 
+- Are they inter-reducible?
+- What about trace languages?
+- Is there a direct reduction from the seemingly simpler Universality Problem (fixed initial configuration) to either of these problems?
+
+* Footnotes
+  :PROPERTIES:
+  :ID:       951d47ed-eb0a-43bc-8ffe-ab01d8919053
+  :END:
+
+[fn:1] Whether this problem is decidable is also a question suggested by Piotrek Hofman 

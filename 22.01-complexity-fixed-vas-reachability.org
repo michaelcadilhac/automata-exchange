@@ -1,0 +1,18 @@
+#+TITLE: 22.1 Complexity of fixed VAS reachability
+#+AUTHOR: Ismaël Jecker
+#+EMAIL: ismael.jecker@gmail.com
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: VASS
+
+A vector addition system is a finite set of vectors $V = \{ v_1,v_2,\ldots,v_n
+\} \in \mathbb{Z}^d$ with $d \in \mathbb{N}$.  Given two positions $s,t \in
+\mathbb{N}^d$, a run of $V$ from $s$ to $t$ is a sequence $s = c_0, c_1, c_2,
+\ldots, c_m = t$ of positions $c_i \in \mathbb{N}^d$ where each position is
+obtained by adding an element of $V$ to the previous one: $c_{i} - c_{i-1} \in
+V$ for every $1 \leq i \leq m$.  Is the following statement correct:
+
+/Conjecture:/ For every vector addition system $V$, there exists a constant
+$C_V$ such that for every pair of positions $s$ and $t$, if there exists at
+least one run of $V$ from $s$ to $t$, one of these runs has a length smaller
+than $C_V \cdot \big(||s|| + ||t|| \big)$.

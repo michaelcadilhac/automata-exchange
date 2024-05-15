@@ -1,0 +1,52 @@
+#+TITLE: 22.4 Reconfigurable broadcast networks (RBN)
+#+AUTHOR: Chana Weil-Kennedy
+#+EMAIL: chana.weilkennedy@in.tum.de
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: networks
+
+Reconfigurable broadcast networks (RBN) are networks consisting of finite-state,
+anonymous agents that communicate by broadcast. An agent broadcasts a message
+which is received by its neighbors (one step is a broadcast plus multiple
+simultaneous receives). The neighbor topology can change (reconfigure) between
+any step.
+
+{{{teaser_end}}}
+
+Formally, an RBN is $R = (Q, \Sigma, \delta)$ with $Q$ a finite set of states,
+$\Sigma$ a finite set of messages and $\delta \subseteq Q \times \{ !a, ?a | a
+\in \Sigma \} \times Q$ a finite set of transitions. Transitions are broadcasts
+of the form $(q, !a, q’)$, or receives of the form $(q,?a, q’)$. A configuration
+$C$ is a multiset over $Q$, which intuitively counts the number of agents in
+each state. Given a letter $a\in \Sigma$ and two configurations $C$ and $C’$ we
+say that there is a step $C \xrightarrow{a} C’$ if there exists a multiset $[ t,
+t_1, \ldots, t_k ]$ of $\delta$ for some $k\ge 0$ satisfying $t=(p, !a, q)$,
+each $t_i =(p_i, ?a, q_i)$, and in multiset notation $C \ge p + \sum_i p_i$, and
+$C' = C - p - \sum_i p_i + q + \sum_i q_i$. Intuitively it means that an agent
+at the state $p$ broadcasts the message $a$ and moves to $q$, and for each $1
+\le i \le k$, there is an agent at the state $p_i$ which receives this message
+and moves to $q_i$. We denote by $\xrightarrow{*}$ the reflexive and transitive
+closure of the step relation. $C’$ is reachable from $C$ if $C \xrightarrow{*}
+C’$.
+
+A cube $Cube$ over $Q$ is a set of configurations described by a lower bound $L
+\colon Q \rightarrow \mathbb{N}$ and an upper bound $U \colon Q \rightarrow
+\mathbb{N} \cup \{ \infty \}$ such that $Cube = \{ C : L \le C \le U \}$. A
+counting set is a finite union of cubes. The reachability set $post^*(S)$ of a
+counting set $S$ is all the configurations reachable from a configuration of
+$S$. The open question is whether $post^*(S)$, for $S$ a counting set, is still
+a counting set, i.e. are counting sets closed under reachability in RBN? And if
+so, then what can we say about the size of its bounds with respect to the size
+of the bounds of $S$.
+
+In a paper by A. R. Balasubramanian and I in Fossacs22, we answered yes, and
+that the size is exponential in the size of $S$ and $Q$. But there was an error
+in the proof (Theorem 2), kindly pointed out by Nicolas Waldburger. If we solve
+this problem for RBN then we get some nice results like closing a complexity gap
+from an ICALP paper by Bouyer et al. on an equivalent-for-these-questions model
+called asynchronous shared-memory systems or register protocols. This relates to
+a result for immediate observation (IO) Petri nets, which can be seen as a
+subclass of RBN. For IO nets, the answer is yes and the size is polynomial in
+the size of $S$ and $Q$.
+
+Link to FoSSaCS article: https://arxiv.org/abs/2201.10432

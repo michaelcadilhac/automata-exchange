@@ -1,0 +1,16 @@
+#+TITLE: 20.2 Deterministic separability of nondeterministic timed languages
+#+AUTHOR: Lorenzo Clemente
+#+EMAIL: clementelorenzo@gmail.com
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: separation, timed automata
+
+- Input: two timed languages $L$, $M$ represented as nondeterministic timed
+  automata.
+- Question: decide whether there exists a deterministic timed automaton
+  recognising a timed language $S$ which separates $L$, $M$, in the sense that $L$ is
+  included in $S$ and $S$ is disjoint from $M$.
+
+The version of the problem when we fix in advance the number of clocks of the
+separating deterministic timed automaton is decidable.  The open problem is then
+when the number of clocks is not fixed (and thus quantified existentially).

@@ -1,0 +1,50 @@
+#+TITLE: 20.8 Good games for good-for-games automata
+#+AUTHOR: Karoliina Lehtinen
+#+EMAIL: karoliina.lehtinen@gmail.com
+#+DATE: <2020-08-03 Mon>
+#+LAYOUT: post
+#+TAGS: games, infinite words, automata
+
+Given an automaton $A$, consider the following two games:
+
+*Game I.* At each turn $i$:
+- Adam plays a letter $a_i$
+- Eve plays a transition $r_i$ over $a_i$
+
+A play is the infinite word $w=a_0a_1\ldots$ and the sequence of transitions
+$r=r_0r_1\ldots$ Eve wins if either $w$ is not in $L(A)$ or $r$ is an accepting run
+over $w$ in $A$.
+
+*Game II.* At each turn turn $i$:
+- Adam plays a letter $a_i$
+- Eve plays a transition $r_i$ over $a_i$
+- Adam plays a pair of transitions $s_i$ and $t_i$
+
+A play is the triple of sequences of runs $r=r_0r_1\ldots, s=s_0s_1\ldots$ and
+$t=t_0t_1\ldots$ Eve wins if either $r$ is an accepting run of $A$ or both $s$ and
+$t$ are not accepting runs of $A$.
+
+{{{teaser_end}}}
+
+* The problem
+
+We know that these two games have the same winner when $A$ is a nondeterministic
+Buchi [1] or coBuchi [2] automaton.
+
+Conjecture [1]: These two games are equivalent on nondeterministic parity automata.
+
+Does this conjecture hold? Can we find any examples of automata on which these
+games do not have the same winner, for example using any acceptance condition or
+extra features like stacks or clocks?
+
+* Why is it interesting?
+
+A positive answer would mean good-for-gameness (which Game I characterises) can
+be decided in polynomial time for automata with a fixed number of priorities, by
+solving Game II.
+
+It is also a rare example of a problem that we know how to solve for both Buchi
+and co-Buchi automata, but not for parity automata.
+
+[1] Bagnol, Marc, and Denis Kuperberg. "Büchi Good-for-Games Automata Are Efficiently Recognizable." 38th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science. 2018.\\
+[2] Boker, U., Kuperberg, D., Lehtinen, K., & Skrzypczak, M. (2020). On Succinctness and Recognisability of Alternating Good-for-Games Automata. arXiv preprint arXiv:2002.07278.

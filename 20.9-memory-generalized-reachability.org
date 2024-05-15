@@ -1,0 +1,12 @@
+#+TITLE: 20.9 Memory requirements for generalized reachability games
+#+AUTHOR: Antonio Casares
+#+EMAIL: antoniocasaressantos@gmail.com
+#+DATE: <2020-11-03 Tue>
+#+LAYOUT: post
+#+TAGS: games, infinite words, automata
+
+Given a regular language $L$ (on finite words), we consider the condition over
+omega-words "having a prefix in $L$". We want to characterize the optimal
+memory requirements for this condition over finite arenas.  The memory
+requirements for the opponent were characterized by Colcombet, Fijalkow and
+Horn in the 2012 paper "Playing Safe" (that also holds for infinite arenas).

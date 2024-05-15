@@ -1,0 +1,17 @@
+#+TITLE: 22.15 Universal Positivity Set
+#+AUTHOR: Edon Kelmendi
+#+EMAIL: edon.kelmendi@gmail.com
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: Skolem problem
+
+Can one construct an infinite recursively enumerable set $S\subset \mathbb{N}$,
+for which one can decide: given any linear recurrence sequence $(u_n)$, whether
+$\exists n\in S$, s.t. $u_n<0$ ?
+
+In other words: is there a set of indices for which the positivity problem is
+decidable?
+
+The analogous question where $u_n<0$ is replaced by $u_n=0$ has a positive
+answer for simple sequences; Luca, Ouaknine and Worrell have constructed such a
+set explicitly (called the universal Skolem set).

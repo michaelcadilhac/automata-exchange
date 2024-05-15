@@ -1,0 +1,21 @@
+#+TITLE: 20.10 Tighten the complexity of solving random-turn games
+#+AUTHOR: Guy Avni
+#+EMAIL: gavni@cs.haifa.ac.il
+#+DATE: <2020-11-03 Tue>
+#+LAYOUT: post
+#+TAGS: games, complexity
+
+A random-turn game is a graph game which is parameterized by a ratio $p$. In
+each turn, we throw a coin with bias $p$ to determine which player moves the
+token. Formally, random-turn games are a special case of stochastic games. We
+are interested in finding, for each vertex, the "value" of the game, which is
+the optimal probability with which Player 1 can guarantee winning. Stated as a
+decision problem: decide whether the value is greater than 0.5. The problem is
+known to be in NP and coNP (again, a special case of stochastic games), but not
+known to be in P nor to be as hard as stochastic games (or any other problem in
+NP and coNP).
+
+My interest in random-turn games stems from the fact that they are equivalent to
+bidding games: a solution to a random-turn game can be used to construct optimal
+bidding strategies in a bidding game. Moreover, random-turn games have been
+extensively studied in the combinatorics community.

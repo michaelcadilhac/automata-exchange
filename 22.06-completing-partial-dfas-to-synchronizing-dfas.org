@@ -1,0 +1,32 @@
+#+TITLE: 22.6 Completing Partial DFAs to Synchronizing DFAs
+#+AUTHOR: Petra Wolf
+#+EMAIL: wolfp@informatik.uni-trier.de
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: automata
+
+/Problem Definition:/ Let $A = (Q, \Sigma, \delta)$ be a (complete)
+deterministic finite automaton (DFA) where $Q$ is a finite set of states, $\Sigma$ is
+a finite alphabet and $\delta \colon Q \times \Sigma \to Q$ is a (totally defined) transition
+function (we neglect start and final states).  We generalize $\delta$ to words $w=
+w_1w_2 \dots w_n$, $w_i \in \Sigma$ by setting $\delta(q, w) = \delta(\delta(q, w_1)w_2\dots w_n)$. We
+further generalize it to sets $S$ of states by $\delta(S, w) = \cup_{q\in S}\{\delta(q, w)\}$.
+We say that a word $w\in \Sigma^*$ is /synchronizing/ for $A$ if $|\delta(Q, w)| = 1$,
+i.e., regardless from which state we read $w$, we end up in the same state.
+
+{{{teaser_end}}}
+
+We call a DFA /partial/, if $\delta$ is a partial function. For a partial DFA
+$A$, we call a word $w\in \Sigma^*$ /carefully/ synchronizing, if $|\delta(Q, w)|=1$
+and $\delta(q, w)$ is defined fore each $q\in Q$, i.e., we never try to use an
+undefined transition when reading $w$ from any state.
+
+The problem of DFASyncCompletion asks, given a partial DFA $A=(Q, \Sigma,
+\delta)$, is there a complete DFA $A'=(Q, \Sigma, \delta')$ such that $A'$ is
+synchronizing and $\delta \subseteq \delta'$?
+
+/Open Question:/ What is the complexity of DFASyncCompletion?
+
+/Explanation & Comments:/ Finding a synchronizing word for a
+complete DFA can be done in polynomial time, but finding a carefully
+synchronizing word for a partial DFA is PSPACE-complete.

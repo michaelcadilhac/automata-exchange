@@ -1,0 +1,12 @@
+#+TITLE: 19.3 Universality for unambiguous automata
+#+AUTHOR: Wojciech Czerwiński
+#+EMAIL: wczerwin@mimuw.edu.pl
+#+DATE: <2019-07-18 19:03>
+#+LAYOUT: post
+#+TAGS: automata, complexity
+
+Determine the complexity of universality problem for unambiguous finite
+automata.  Problem is known to be in PTIME and (as far as I understand) in
+$\textup{NC}^2$, but is only known to be NL-hard.
+
+

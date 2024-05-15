@@ -1,0 +1,13 @@
+#+TITLE: 19.11 Shortest runs in 3-D VASS
+#+AUTHOR: Wojciech Czerwiński
+#+EMAIL: wczerwin@mimuw.edu.pl
+#+DATE: <2019-07-18 19:11>
+#+LAYOUT: post
+#+TAGS: counter machines, VASS, reachability
+
+Is there a 3-D VASS with shortest run from source to target, which is longer
+than exponential?  Best lower bound is exponential, best upper bound is tower.
+The case of VASSes with finite reachability set is probably the core of the
+problem.  In my point this is one of the problems we should attack if we want to
+push theory of VASSes further.
+

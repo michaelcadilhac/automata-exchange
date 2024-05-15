@@ -1,0 +1,30 @@
+#+TITLE: 19.12 Reachability for bounded branching VASS
+#+AUTHOR: Filip Mazowiecki
+#+EMAIL: filip.mazowiecki@u-bordeaux.fr
+#+DATE: <2019-07-18 19:12>
+#+LAYOUT: post
+#+TAGS: counter machines, VASS, complexity, reachability
+
+Recall that a $d$-VASS is a finite automaton, where transitions are labelled
+with $d$-dimensional vectors over integers. A configuration of a $d$-VASS is a
+pair of a state and a $d$-dimensional vector over naturals. Bounded VASS
+(BoVASS) are a variant of the classic VASS model where all values in all
+configurations are upper bounded by a fixed natural number, encoded in binary in
+the input. It is easy to see that the reachability is in PSPACE for BoVASS and
+it is not hard to show NP-hardness. 
+
+{{{teaser_end}}}
+
+In 2013 Fearnley and Jurdziński proved
+that the reachability problem in this model is PSPACE-hard already in
+dimension 1. We investigate the complexity of the reachability problem when the
+BoVASS model is extended with branching transitions (BoBrVASS). Branching
+transitions create two independent copies of the system splitting the
+configuration vector among them. For BoBrVASS it is easy to show that the
+reachability problem is in EXPTIME and PSPACE hardness follows from the results
+about BoVASS. Recently we proved that the reachability problem is EXPTIME-hard
+for $d$-BoBrVASS when $d \ge 2$, leaving the case for $d = 1$ as an open problem
+for Autobóz.
+
+This problem is also suggested by Michał Pilipczuk.
+

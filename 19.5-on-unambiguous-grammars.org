@@ -1,0 +1,25 @@
+#+TITLE: 19.5 On unambiguous grammars
+#+AUTHOR: Lorenzo Clemente
+#+EMAIL: clementelorenzo@gmail.com
+#+DATE: <2019-07-18 19:05>
+#+LAYOUT: post
+#+TAGS: context-free grammars, pushdown automata, complexity
+
+The universality problem for context-free grammars is undecidable.  For
+deterministic pushdown automata it is PTIME-complete.  For unambiguous
+context-free grammars, which constitute a model of intermediate expressive
+power, the problem is still decidable. Using the existential theory of the reals
+(the existential fragment of Tarski's algebra), it can be shown to be in
+PSPACE. However, no lower-bound better than PTIME is known.  Improving either
+the PSPACE upper or the PTIME lower-bound would be a major advance on this
+problem!
+
+{{{teaser_end}}}
+
+A related problem is universality of the union of a deterministic pushdown
+automaton and an unambiguous finite automaton.
+
+While this problem reduces to the universality problem of unambiguous
+context-free grammars, a reduction in the other direction seems unlikely. The
+known complexity bounds are the same as for the more general problem.
+

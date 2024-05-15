@@ -1,0 +1,27 @@
+#+TITLE: 22.8 From two-way to one-way transducers, revisited
+#+AUTHOR: Nguyễn Lê Thành Dũng
+#+EMAIL: nltd@nguyentito.eu
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: transducers
+
+A string-to-string function is said to be rational
+(resp. regular) when it is computed by a functional nondeterministic one-way
+finite-state transducer (resp. a deterministic two-way transducer). Filiot et
+al. [arXiv:1301.5197] have shown that it is decidable whether a given regular
+function is rational (the converse is always true); it was later shown that the
+problem is EXPSPACE-complete [Unpublished result by Ismaël Jecker, obtained by
+combining arXiv:1701.02502 arXiv:2101.05895].
+
+(1) Is there a "simple" effective characterization in terms of local behaviors
+of two-way transducers that compute rational functions?
+
+(2) Is it possible to extend this to infinite words?
+
+{{{teaser_end}}}
+
+Gaëtan Douéneau-Tabot suggests that (1) might be doable with factorisation
+forests, using the kind of techniques he has applied to another transducer
+membership problem in [arXiv:2112.10212]. If this works, then it might be
+possible to tackle (2) using factorisation forests over infinite words
+[doi:10.1016/j.tcs.2009.10.013].

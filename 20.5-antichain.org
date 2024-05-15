@@ -1,0 +1,18 @@
+#+TITLE: 20.5 Regular antichain subset of the iteration of a regular language
+#+AUTHOR: Vincent Penelle
+#+EMAIL: vincent.penelle@u-bordeaux.fr
+#+DATE: <2020-07-21 Tue>
+#+LAYOUT: post
+#+TAGS: automata
+
+This problem comes from a typing problem (non structural subtype assignment).
+
+Given a regular language R, does there exist a regular language U such that:
+- U is an antichain for the prefix ordering
+- $\forall u \in U, \exists r \in R, r < u < r^\omega$
+- $\exists u \in U, r \in R, r < u < r^\omega \wedge |r^{-1}u| > ||U||$
+where $||U||$ is the number of states of the minimal automaton recognizing $U$, and $r^\omega$ is the infinite iteration of $r$.
+
+I conjecture that such language does not exist, though I don't find an approach
+to attack it.  If such a language does exist, it would be interesting to know if
+there can be an infinite number of words such that the third point holds or not.

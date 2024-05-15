@@ -1,0 +1,25 @@
+#+TITLE: 19.14 Continuous reachability in ordered data VAS
+#+AUTHOR: Piotrek Hofman
+#+EMAIL: piotrek.hofman@gmail.com
+#+DATE: <2019-07-18 19:14>
+#+LAYOUT: post
+#+TAGS: VASS, reachability
+
+Data VAS is a finite set of finitely supported functions from ordered data set
+$\mathbb{D}$ to $\mathbb{Z}^k$, where k is a dimension. A configuration/marking is a finitely
+supported function from $\mathbb{D}$ to $\mathbb{N}^k$.
+
+From a configuration $m$ there is a step to $m'$ if there is a vector $x\in \text{VAS}$
+and $\pi$ an ordered preserving bijection (permutation) form $\mathbb{D}$ to $\mathbb{D}$ such
+that $m+x\circ \pi=m'$. The reachability relation is a transitive closure of the step
+relation. The reachability problem is undecidable, that is why we are looking
+for different relaxation of it.
+
+{{{teaser_end}}}
+
+Continuous reachability is a continuous version of the reachability. First,
+markings are finitely/supported functions from $\mathbb{D}$ to $\mathbb{Q}_{\geq 0}^k$. Further
+there is a continuous step from $m$ to $m'$ if there are: $x\in \text{VAS}$, an order
+preserving data permutation $\pi$, and a factor $a\in \mathbb{Q}_{\geq 0}$ such that
+$m+a\cdot x\circ \pi=m'$. A transitive closure of continuous step is a continuous
+reachability relation.

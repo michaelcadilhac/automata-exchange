@@ -1,0 +1,37 @@
+#+TITLE: 19.17 Existence of a universal amplifier of selection
+#+AUTHOR: Ismaël Jecker
+#+EMAIL: ismael.jecker@gmail.com
+#+DATE: <2019-07-18 19:17>
+#+LAYOUT: post
+#+TAGS: stochastic processes
+
+Moran Birth-death processes are stochastic processes defined as follows.
+Consider a connected graph $G$ and a parameter
+$r \in \mathbb{R}$ strictly greater than $1$.
+We start with a partition of the vertices of $G$ into two types:
+/mutant/ vertices, that have /fitness/ $r$,
+and /resident/ vertices, that have fitness $1$.
+At each step, a random vertex is chosen
+with probability proportional to its fitness,
+and spreads its type to an adjacent vertex
+chosen uniformly at random.
+
+{{{teaser_end}}}
+
+With probability $1$,
+the process eventually reaches 
+either fixation of the mutation (all the vertices are mutant)
+or extinction (all the vertices are resident).
+The /fixation probability/ of a vertex $v$ of $G$
+is the probability that the process starting with
+a single mutant at $v$ eventually reaches fixation.
+The fixation probability of each vertex of the complete graph on $n\in \mathbb{N}$ vertices is
+\[
+p_n = \frac{1-r^{-1}}{1-r^{-n}}.
+\]
+
+*Open problem:*
+Does there exist a connected graph
+$G$ with $n \in \mathbb{N}$ vertices such that
+the fixation probability of each vertex of $G$
+is strictly greater than $p_n$?

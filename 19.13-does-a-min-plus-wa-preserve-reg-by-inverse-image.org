@@ -1,0 +1,31 @@
+#+TITLE: 19.13 Does a $(\textsf{min,+})$-WA preserve REG by inverse image?
+#+AUTHOR: Nathan Lhote
+#+EMAIL: nlhote@mimuw.edu.pl
+#+DATE: <2019-07-18 19:13>
+#+LAYOUT: post
+#+TAGS: weighted automata, continuity
+
+We are interested in functions realized by weighted automata over the semiring
+$\mathbb N_{\mathsf{ min}}=\langle \mathbb N\cup\left\{ \infty \right\} , \mathsf{ min}, +,
+\infty,0\rangle$.  An $\mathbb N_{\mathsf{ min}}$-weighted automaton
+$\mathcal A$ over alphabet $\Sigma$ realizes a partial function
+$\llbracket \mathcal A \rrbracket:\Sigma^*\rightarrow \mathbb N$.  We want to decide given such
+a function if it preserves ``simple'' sets by inverse image. By simple we mean
+regular languages ($\mathbb N$ is viewed a the set of words over a unary
+alphabet, hence the regular languages are the semilinear sets).  Let us state
+the decision problem.
+
+{{{teaser_end}}}
+
+*Input:* $\mathcal{A}$, weighted automaton over $\mathbb{N}_{\mathsf{min}}$
+
+*Question:* Does it hold that for all $S\subseteq \mathbb N$ semilinear,
+$\llbracket \mathcal A \rrbracket^{-1}(S)$ is regular?
+
+*Remark.* This is equivalent to solving the problem over the
+semiring
+$\mathbb N_{\mathsf{ max}}=\langle \mathbb N\cup\left\{ -\infty \right\} , \mathsf{ max}, +,
+-\infty,0\rangle$.
+
+
+

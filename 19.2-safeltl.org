@@ -1,0 +1,22 @@
+#+TITLE: 19.2 SafeLTL
+#+AUTHOR: Karoliina Lehtinen
+#+EMAIL: K.Lehtinen@liverpool.ac.uk
+#+DATE: <2019-07-18 19:02>
+#+LAYOUT: post
+#+TAGS: logic, temporal logic, infinite words
+
+
+An $\omega$-word language $L\subseteq \Sigma^\omega$ is a safety language if for
+all $w\not \in L$ there is a prefix $v\in \Sigma^*$ of $w$ such that for all
+$u\in \Sigma^\omega$, $vu\not \in L$.
+
+safeLTL is the fragment of negation normal form LTL without Until nor
+Finally. SafeLTL captures exactly LTL expressible safety properties. However, to
+go from an LTL formula describing a safety property to an equivalent safeLTL
+formula, the best known translation seems to go via a deterministic safety
+automaton and then back to LTL, incurring a triple-exponential blow-up on the
+way.
+
+Open problem: Is there a (more) concise translation from LTL to safeLTL? Are
+there safety properties that are exponentially more concisely expressible in LTL
+than safeLTL?

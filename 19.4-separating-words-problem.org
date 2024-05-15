@@ -1,0 +1,12 @@
+#+TITLE: 19.4 Separating words problem
+#+AUTHOR: Wojciech Czerwiński
+#+EMAIL: wczerwin@mimuw.edu.pl
+#+DATE: <2019-07-18 19:04>
+#+LAYOUT: post
+#+TAGS: automata, descriptional complexity, separation
+
+Given two words $u, v$ of length $n$ over $\{a, b\}$. Does there always exist an
+automaton of size $O(\log n)$ which distinguishes $u$ and $v$. Or bigger, like
+$O(n^{1/3})$? Best known bound is about $O(n^{2/5} \log(n))$.
+
+

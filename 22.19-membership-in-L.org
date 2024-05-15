@@ -1,0 +1,36 @@
+#+TITLE: 22.19 Membership in Reversed Partially-Ordered Automata
+#+AUTHOR: Michaël Cadilhac
+#+EMAIL: michael@cadilhac.name
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: algebra, automata
+
+Let $A$ be an automaton and write, for any word $w$, $f_w$ for the function that
+maps any state $q$ to the state reached by reaching $w$ from $q$.
+
+The /membership problem MEMB($V$)/ for a class $V$ of deterministic automata is the following:
+- Given: An automaton $A \in V$ and a function $f\colon Q \to Q$ from states to states
+- Question: Is there a word $w$ such that $f_w = f$?
+
+In the late 1980s, Beaudry, together with McKenzie and Thérien, studied the
+problem for most natural classes $V$ (e.g., groups and aperiodic automata).
+Quoting Beaudry, McKenzie, Thérien, 1992:
+
+"For each $V$ aperiodic, the computational complexity of MEMB($V$) turns out to
+look familiar.  Only five possibilities occur as $V$ ranges over the whole
+aperiodic sublattice: /With one family of NP-hard exceptions whose exact status is
+still unresolved,/ any such MEMB($V$) is either PSPACE-complete, NP-complete,
+P-complete or in AC$⁰$."
+
+{{{teaser_end}}}
+
+The open case is with $V$ defined in any of the following equivalent ways:
+- The set of minimal automata such that the reverse language is recognized by a
+  partially-ordered automaton (i.e., the transition function induces a partial
+  order).
+- The set of minimal automata in which for every word $w$, if $f_w = f_{ww}$
+  then $f_w = f_{aw}$ for any letter $a$ of $w$.
+- The set of minimal automata of $\mathcal{L}$-trivial languages.
+
+/Question:/ Is the membership problem for that class in NP or PSPACE-hard?
+(These are the two possibilities.)

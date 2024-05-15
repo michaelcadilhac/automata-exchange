@@ -1,0 +1,24 @@
+#+TITLE: 19.8 Logic and automata for multiply nested-words
+#+AUTHOR: Marie Fortin
+#+EMAIL: marie.fortin@lsv.fr
+#+DATE: <2019-07-18 19:08>
+#+LAYOUT: post
+#+TAGS: logic, automata, pushdown automata
+
+Nested-word automata (NWA) are essentially visibly pushdown automata with
+multiple stacks. They accept languages of (multiply) nested-words, which are
+words equipped with a fixed number of binary nesting relations, connecting
+matching push and pop events. In the case of a single stack (that is, a single
+nesting relation), NWA are equivalent to monadic second-order logic (MSO). The
+binary predicates used in the logic are the direct successor relation, and the
+nesting relations. However, in the general case, and even with only two stacks,
+NWA are not closed under complementation, and strictly less expressive than
+MSO. In fact, for two stacks, NWA are equivalent to the existential fragment of
+MSO (EMSO). The equivalence with MSO can be recovered when restricting the set
+of possible behaviors, one classical example being phase-bounded nested words.
+
+In the general case (more than two stack, arbitrary nested words), the exact
+expressive power of NWA is not known. In particular, the following question is
+open: can every first-order formula be translated into an equivalent NWA ?
+
+

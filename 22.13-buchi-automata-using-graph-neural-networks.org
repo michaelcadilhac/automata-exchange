@@ -1,0 +1,19 @@
+#+TITLE: 22.13 Büchi automata using graph neural networks
+#+AUTHOR: León Bohn
+#+EMAIL: bohn@lics.rwth-aachen.de
+#+DATE: <2022-09-16 Fri>
+#+LAYOUT: post
+#+TAGS: neural networks, automata
+
+Recently [arXiv:2206.09619], an approach for analyzing Büchi automata using
+graph neural networks (GNN) was proposed. The experimental analysis revealed
+that this GNN-based approach can predict basic properties on independent test
+automata quite well. Further, it seems to be able to generalize from training
+data in a meaningful way, as the predictions were successful on instances much
+larger than those provided in the training data.
+
+Thus far, the analysis has been limited to the emptiness problem and simple
+properties like "does the automaton accept a word containing at least
+one/infinitely many $b$ ?". My immediate question was what the limits of
+learning-based approaches are and whether one can identify certain properties
+which cannot be learned GNNs.
