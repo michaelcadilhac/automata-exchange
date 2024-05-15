@@ -1,0 +1,38 @@
+#+TITLE: 23.6 Target for pushdown RBN
+#+AUTHOR: Corto Mascle
+#+EMAIL: corto.mascle@labri.fr
+#+DATE: <2024-29-04>
+#+LAYOUT: post
+#+TAGS: parameterized verification
+
+Reconfigurable Broadcast Networks (RBN) are a model for large groups of
+identical agents communicating via unreliable broadcast. A pushdown RBN
+(PRBN) is simply one where each agent is modeled by a pushdown transition
+system.
+A PRBN on a message alphabet \(\mathcal{M}\) is described by a pushdown automaton \(\mathcal{A}\) over the alphabet \( \{br(m), rec(m) | m \in \mathcal{M} \}\). Configurations of \(\mathcal{A}\), i.e., pairs \((q, \sigma)\) of state and stack content, are called local configurations.\(\\ \)
+
+A configuration of the PRBN is a function from a finite set of agents \(\mathbb{A}\) to local configurations.
+A run starts with an arbitrarily large set of agents, all in the initial state with an empty stack . A step
+consists of one agent taking a transition with a broadcast \(br(m)\), and each other agent either not moving or taking a transition \(rec(m)\) (in other words, one agent broadcasts and other agents non-deterministically receive the broadcast or not).\(\\ \)
+
+{{{teaser_end}}}
+
+Classic problems on such models ask whether a given set of configurations
+is reachable. A particular case of interest is whether we can reach a configuration
+where all agents are in a given state \(q_f\). This problem is called
+Target.
+The open problem is to find tight complexity bounds on the Target problem for PRBN. The problem on finite-state RBN is known to be solvable in
+polynomial time. An easy reduction from Horn satisfiability shows PTIME-
+completeness.\(\\ \)
+
+On the other hand, one can show that the problem for PRBN is in NP:
+intuitively, to witness Target, it suffices to
+one can guess the set of messages \(\mathcal{M}' \subseteq \mathcal{M}\) of messages used, and
+two orders on this set, an order of appearance \(\leq_a\) and one of disappearance \(\leq_d\).
+Those orders are the one in which messages are first broadcast in the run, and the one in which messages are last broadcast.
+Then one checks, for each \(m \in \mathcal{M}'\), that there are local runs that broadcast \(m\) and only receive messages lower for \(<_a\) beforehand (resp. greater for \(<_d\) afterwards).
+
+If they exist, one can construct a run witnessing Target by making many agents follow each of those runs.
+If a run witnessing Target exists, they can be obtained by taking the local runs of agents broadcasting first and last each message.\(\\ \)
+
+Is the Target problem for PRBN NP-hard? in PTIME?

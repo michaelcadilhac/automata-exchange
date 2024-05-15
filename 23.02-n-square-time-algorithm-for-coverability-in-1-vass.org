@@ -1,0 +1,27 @@
+#+TITLE: 23.2 $o(n^2)$-time algorithm for coverability in 1-VASS
+#+AUTHOR: Henry Sinclair-Banks
+#+EMAIL: h.sinclair-banks@warwick.ac.uk
+#+DATE: <2023-07-25>
+#+LAYOUT: post
+#+TAGS: coverability, vass
+
+A 1-dimensional Vector Addition System with States (1-VASS) can be seen as an
+directed and integer weighted graph that is equipped with a non-negative integer
+counter.
+
+A configuration of a 1-VASS is a pair $(q, x)$ that is the current node $q$ and
+the current non-negative counter value $x$.
+
+A run in a 1-VASS is a sequence of configurations $(q_0, x_0), (q_1, x_1),
+\ldots, (q_k, x_k)$ where for each $i \in \{ 1, \ldots, k\}$, there is an edge
+from $x_{i-1}$ to $x_i$ with weight $x_i - x_{i-1}$.
+
+{{{teaser_end}}}
+
+Let $n$ the size of a 1-VASS, encoded in unary, that is the number of states plus the absolute value of all weights.
+
+The coverability problem asks: in a given 1-VASS, is there is a run from a given starting state that ends in a given target state (with any counter value).
+
+There is a straightforward $O(n^2)$-time algorithm for coverability in 1-VASS.
+
+Does is there an $o(n^2)$-time algorithm for coverability in 1-VASS?

@@ -1,0 +1,21 @@
+#+TITLE: 23.4 Bounds on the length of a coverability path in VASS
+#+AUTHOR: Wojciech Czerwiński
+#+EMAIL: wczerwin@mimuw.edu.pl
+#+DATE: <2024-04-22>
+#+LAYOUT: post
+#+TAGS: reachability, vass, pushdown
+
+By the classic Rackoff argument in d-dimensional Vector Addition System with
+States (d-VASS) V if there is a path starting in configuration s and covering
+configuration t then there is also a covering path of length at most M^k, where
+M is the maximal number occurring on transitions of VASS and in configurations s
+and t, while \(k \approx 2^d\).  Therefore for each fixed d there is a path of
+length polynomial in M.
+
+We conjecture that a much stronger property holds, that there is always a
+covering path of length \(f(size(V)) \cdot (size(s) + size(t)\), namely
+depending in some way on the size of VASS V, but only linear with respect to the
+size of source s and target t.
+
+I think this conjecture is hard to prove despite of a simple formulation and
+progress on it could led to a deep understanding of runs of VASS.

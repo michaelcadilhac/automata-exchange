@@ -1,11 +1,19 @@
-#+TITLE: 23.01 TARGET in asynchronous shared-memory systems
+#+TITLE: 23.1 TARGET in asynchronous shared-memory systems
 #+AUTHOR: Nicolas Waldburger
 #+EMAIL: nicolas.waldburger@irisa.fr
 #+DATE: <2023-09-16>
 #+LAYOUT: post
 #+TAGS: verification, automata, parameterized verification
 
-An asynchronous shared-memory system is composed of \(n\) processes that interact by reading from and writing to a shared memory. This shared memory is composed of \(r\) registers, each containing one symbol at a time from the finite alphabet \(D\). All processes are anonymous and identical; they are described by the same finite automaton, called protocol. The transitions of the automaton are labelled by actions of the form \(read_i(d)\) or \(write_i(d)\) with \(i \in \{1,\dots,r\}\) and \(d \in D\).
+An asynchronous shared-memory system is composed of \(n\) processes that
+interact by reading from and writing to a shared memory. This shared memory is
+composed of \(r\) registers, each containing one symbol at a time from the
+finite alphabet \(D\). All processes are anonymous and identical; they are
+described by the same finite automaton, called protocol. The transitions of the
+automaton are labelled by actions of the form \(read_i(d)\) or \(write_i(d)\)
+with \(i \in \{1,\dots,r\}\) and \(d \in D\).
+
+{{{teaser_end}}}
 
 A step of the execution corresponds to some process taking a transition of the automaton and, doing so, reading from or writing to some register.
 
