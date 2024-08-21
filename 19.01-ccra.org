@@ -26,20 +26,11 @@ $i$, or adding two registers.
 For weighted automata people, note that this model is equivalent to this, where
 \(\mathcal{W}\) is a deterministic WA over \((\mathbb{Z}, \min, +)\):
 
-
-#+name: repath
-#+begin_src shell :var data="" :var attr_html="" :results output silent :exports results
-  [ -z "$attr_html" ] || echo "#+ATTR_HTML: $attr_html"
-  echo "$data" | sed s@file:source@https://autoboz.org/open-problems@
-#+end_src
-
-#+LATEX_HEADER: \usepackage{tikz}
-#+LATEX_HEADER: \usetikzlibrary{automata,positioning,calc,through,fit,decorations.pathreplacing}
 #+header: :file source/img/wa.svg
 #+header: :dvisvgm
 #+header: :results raw
-#+header: :post repath(data=*this*, attr_html=":style margin-left: auto; margin-right: auto; display: block;")
 #+header: :buffer no
+#+header: :headers '("\\usepackage{tikz}\\usetikzlibrary{automata,positioning,calc,through,fit,decorations.pathreplacing}")
 #+BEGIN_SRC latex
   %% Automata
 
@@ -92,6 +83,9 @@ For weighted automata people, note that this model is equivalent to this, where
 
     \end{smallautomaton}
 #+END_SRC
+
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;
+https://automata.exchange/img/wa.svg
 
 
 In [1], we showed that equivalence is undecidable for that model (even, and this

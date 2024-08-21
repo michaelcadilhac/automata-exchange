@@ -1,7 +1,7 @@
 #+TITLE: 23.6 Target for pushdown RBN
 #+AUTHOR: Corto Mascle
 #+EMAIL: corto.mascle@labri.fr
-#+DATE: <2024-29-04>
+#+DATE: <2024-04-29>
 #+LAYOUT: post
 #+TAGS: parameterized verification
 

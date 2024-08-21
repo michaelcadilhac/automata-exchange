@@ -21,7 +21,7 @@ is, both the update matrix \(M\) and the initialisation vector \(s\)) such that
 \(p(x_1(n), \dots, x_d(n)) = 0\) holds after \(n\)-th iteration of the loop for
 all \(n \in \mathbb{N}\).
 
-{{{end_teaser}}}
+{{{teaser_end}}}
 
 It is natural to start investigations by assuming the same number of variables \(d\) in the loop as in the desired polynomial invariant \(p(x_1, \dots, x_d) = 0\). However, as can be seen from the following example, linear loops with \(s > d\) variables are more expressive.
 \[ (x,y,z):= (1,2,-1);
