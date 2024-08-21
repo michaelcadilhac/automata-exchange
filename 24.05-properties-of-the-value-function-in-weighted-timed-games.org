@@ -1,4 +1,4 @@
-#+TITLE: 2024.5 Properties of the value function in weighted timed games
+#+TITLE: 24.5 Properties of the value function in weighted timed games
 #+AUTHOR: Julie Parreaux
 #+EMAIL: j.parreaux@uw.edu.pl
 #+DATE: <2024-07-04>

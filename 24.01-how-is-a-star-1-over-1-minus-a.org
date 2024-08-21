@@ -21,6 +21,7 @@ In that sense,
 {{{teaser_end}}}
 
 We have to be a bit careful as the above is actually a non-commutative division (since multiplication of words is non-commutative), so we write
+{{{raw}}}
 \begin{align*}
 	\frac{{|}\,a~}{~b\,{|}}
  	\quad\text{for}\quad
@@ -31,9 +32,11 @@ We have to be a bit careful as the above is actually a non-commutative division 
 	a \cdot \frac{1}{b}~,
 \end{align*}
 whereas \(\frac{{|}\,1~}{~b\,{|}} = \frac{~1\,{|}}{{|}\,b~} = \frac{1}{b}\) because \(\varepsilon \cdot x = x \cdot \varepsilon = x\).
+{{{endraw}}}
 
 Using our new insight  -- "Kleene star is a fraction" --, we can now conveniently prove, for instance, the well-known identity \(a(ba)^* = (ab)^*a\). 
 While the standard proof is rather lengthy and involves several axioms of Kleene algebra, our proof fits on a beer coaster (it was actually devised on such, see picture below) and goes as follows:
+{{{raw}}}
 \begin{align*}
 	a(ba)^* 
 	&{} = \frac{\quad{}~a~\quad{|}}{{|}\,1 - ba}\\
@@ -45,6 +48,7 @@ While the standard proof is rather lengthy and involves several axioms of Kleene
 	\tag{left-expand fraction by \(a\)}\\
 	 &{} =(ab)^*a
 \end{align*}
+{{{endraw}}}
 There are "only" two problems with all of the above: neither \({\ldots} - a\) nor \(\tfrac{1}{\ldots}\) make sense at the moment.
 
 Open Problem: How can we formally make sense of additive and multiplicative inverses on words, such that \(a^* = 1 + a + a^2 + {\dots} = \frac{1}{1 - a}\), i.e.\ such that \(a^* \cdot (1 - a) = 1\)?

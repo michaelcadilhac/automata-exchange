@@ -1,4 +1,4 @@
-#+TITLE: 24.17 title Monotone regular functions
+#+TITLE: 24.17 Monotone regular functions
 #+AUTHOR: Nathan Lhote
 #+EMAIL: nathan.lhote@lis-lab.fr
 #+DATE: <2024-07-13>
