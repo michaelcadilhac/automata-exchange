@@ -1,0 +1,32 @@
+#+TITLE: 2024.5 Properties of the value function in weighted timed games
+#+AUTHOR: Julie Parreaux
+#+EMAIL: j.parreaux@uw.edu.pl
+#+DATE: <2024-07-04>
+#+LAYOUT: post
+#+TAGS: timed automata, game, continuity, fixpoint
+
+Weighted timed games (WTGs for short) are two-player zero-sum games played in a
+timed automaton equipped with integer weights into transitions and locations.
+In a turn-based fashion, the current player chooses the next delay and
+transition. We consider optimal reachability objectives, in which one of the
+players, whom we call Min, wants to reach a target location while minimising
+the cumulated weight given by the sequence of transitions firing and the time
+spent in each location. Its opponent, called Max, has the opposite objective,
+i.e. avoids the target or maximises the accumulated weight needed to reach the
+target.
+
+This allows one to define the value of a WTG as the minimal weight Min can
+guarantee whatever Max does. In a WTG, the value for a given location is a
+function according to the valuation of the clocks when the first player starts
+to play.
+
+While knowing if Min has a strategy to guarantee the value lower than a given
+threshold is known to be undecidable (with two or more clocks), several
+conditions, one of them being the divergence or one-clock WTGs have been given
+to recover decidability. Decidability proof relies on the properties of the
+value: it is a piecewise affine function characterise as a fixpoint of a
+operator that locally chooses the best option for each player.
+
+I propose to study this function for all WTGs: for which class of WTGs, the
+value function is continuous and/or a fixed point of the local operator? In
+particular, I propose to start with WTGs that only use non-negative weights.

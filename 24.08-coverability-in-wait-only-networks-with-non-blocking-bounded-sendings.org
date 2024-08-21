@@ -1,0 +1,32 @@
+#+TITLE: 24.8 Coverability in Wait-Only Networks with non-blocking bounded sendings
+#+AUTHOR: Lucie Guillou
+#+EMAIL: guillou@irif.fr
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: distributed networks, coverability
+
+Let us assume a distributed system with an unknown number of participants. They
+all execute the same program given as a finite-state machine called a protocol
+and can communicate by sending messages. In the protocol, transitions among two
+states are either reception transitions (labeled by a message), broadcast
+transitions (labeled by a message), or sending transitions (labeled by a
+message and an integer). When a process takes a broadcast transition labeled by
+a message \(a\), all other agents on a state with an outgoing reception
+transition labeled by message \(a\) take it. When a process takes a sending
+transition labeled by a message \(a\) and an integer \(k\), we distinguish
+between two cases: (1) either there exist \(k\) processes who are on a state
+with an outgoing reception transition labeled by message \(a\), and they take
+this transition; (2) or there exist \(j < k\) such processes and only those
+\(j\) agents take the corresponding reception transition.
+
+{{{teaser_end}}}
+
+The problem asking, given a protocol and a state of this protocol, if there
+exists a number of agents with which we can find a run leading to a
+configuration in which at least one agent is on this state is called the
+coverability problem and is EXPSPACE-complete. We consider a restriction on
+protocols namely Wait-Only protocol: in a Wait-Only protocol, each state is
+either an action state (all its outgoing transitions are broadcast transitions
+or sending transitions) or a waiting state (all its outgoing transitions are
+reception transitions). The complexity of the coverability problem is unknown
+in that case. 

@@ -1,0 +1,19 @@
+#+TITLE: 24.18 Lower bounds for determinizability of weighted automata over \(\mathbb Q\)
+#+AUTHOR: Nathan Lhote
+#+EMAIL: nathan.lhote@lis-lab.fr
+#+DATE: <2024-07-13>
+#+LAYOUT: post
+#+TAGS: weighted automata
+
+Although quite natural, the problem of deciding if a weighted automaton can be
+determinized has only been solved in 2022 by Bell & Smertnig
+[arXiv:2209.02260]. Following this decidability result, it is shown in
+Benalioua, Lhote & Reynier [arXiv:2307.13505] that one can decide in 2EXPTIME
+if a weighted automaton over the field of rationals is equivalent to a
+deterministic one. It is shown in Jecker, Mazowiecki & Purser
+[arXiv:2310.02204] that determinizability can be decided in PSPACE, when the
+automata are restricted to polynomial ambiguity.
+
+*Question:* Can one obtain lower bounds for the decision problem of
+determinizability of weighted automata over \(\mathbb Q\)?
+

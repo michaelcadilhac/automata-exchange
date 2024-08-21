@@ -1,0 +1,25 @@
+#+TITLE: 24.9 Is the Hierarchy of Valence Systems with Open Reachability Proper?
+#+AUTHOR: Lia Schütze
+#+EMAIL: lschuetze@mpi-sws.org
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: automata, languages, valence systems, vass, pvass, pushdown
+
+Starting from finite state automata, one can create a hierarchy of automata models by repeatedly applying one of the following constructions:
+
+
+- Adding VASS counters (i.e. over \(\mathbb{N}\), without zero tests), and
+- Building stacks containing the model.
+
+
+As a special case, we get, for example:
+
+
+- \(\mathsf{FSA}\) with \(\mathbb{N}\)-counters \(= \mathsf{VASS}\)
+- Stacks over \(\mathsf{FSA}\) \(= \mathsf{PDA}\)
+- \(\mathsf{PDA}\) with \(\mathbb{N}\)-counters \(= \mathsf{PVASS}\)
+
+
+It would be interesting to know whether this hierarchy is proper, or if it collapses at some level.
+
+A first avenue of investigation might be to consider the hierarchy created by building stacks and adding \(\mathbb{Z}\)-counters.

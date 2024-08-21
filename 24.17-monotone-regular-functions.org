@@ -1,0 +1,25 @@
+#+TITLE: 24.17 title Monotone regular functions
+#+AUTHOR: Nathan Lhote
+#+EMAIL: nathan.lhote@lis-lab.fr
+#+DATE: <2024-07-13>
+#+LAYOUT: post
+#+TAGS: transducers
+
+A regular function is given by a deterministic 2way transducer: a deterministic
+2way automaton with outputs. Over the word \(w\in \Sigma^* \) such an automaton
+has an input tape with content \({\vdash} w {\dashv}\) and can move left and
+right in a read-only fashion (accepting runs have to end on \(\dashv\)). On
+every transition an output word in \(\Gamma^*\) is written on a right-only
+output tape. Such a machine realizes a partial function
+\(f:\Sigma^*\rightarrow\Gamma^*\), defined on words with an accepting run.
+
+Such a function \(f\) is *monotone* if for any \(u,v\in\Sigma^*\), if
+\(u\leq v\) then \(f(u)\leq f(v)\), where \(\leq \) denotes the prefix order.
+
+A *sequential* 2way transducer is a syntactic restriction of deterministic
+transducers where no transition is allowed on symbol \(\dashv\). Such a machine
+necessarily realizes a monotone function since the run over word \(u\) is a
+prefix of the run over word \(uv\). </p>
+
+*Question:* Can every monotone regular function be realized by a sequential
+2way transducer? 

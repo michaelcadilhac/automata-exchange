@@ -1,0 +1,50 @@
+#+TITLE: 2024.1 How is $a^* = 1/(1-a)?$
+#+AUTHOR: Benjamin Lucien Kaminski
+#+EMAIL: kaminski@cs.uni-saarland.de
+#+DATE: <2024-06-21>
+#+LAYOUT: post
+#+TAGS: Kleene algebra
+
+Consider the language \(a^*\).
+We have
+\begin{align*}
+		a^* &{}= \varepsilon + a + aa + aaa + \ldots\\
+		&{}= 1 + a + a^2 + a^3 + \ldots~, \tag{since \(\varepsilon\) is the unit of concatenation}\\
+		&{}= \sum_{k = 0}^\infty a^k
+\end{align*}
+in which we now immediately recognize the familiar \emph{geometric series} whose closed form is well known to be \(\frac{1}{1 - a}\).
+In that sense,
+\begin{align*}
+		a^* = \frac{1}{1 - a}~.
+\end{align*}
+
+{{{teaser_end}}}
+
+We have to be a bit careful as the above is actually a non-commutative division (since multiplication of words is non-commutative), so we write
+\begin{align*}
+	\frac{{|}\,a~}{~b\,{|}}
+ 	\quad\text{for}\quad
+	\frac{1}{b} \cdot a
+	\qquad\text{and}\qquad
+	\frac{~a\,{|}}{{|}\,b~}
+	\quad\text{for}\quad{}
+	a \cdot \frac{1}{b}~,
+\end{align*}
+whereas \(\frac{{|}\,1~}{~b\,{|}} = \frac{~1\,{|}}{{|}\,b~} = \frac{1}{b}\) because \(\varepsilon \cdot x = x \cdot \varepsilon = x\).
+
+Using our new insight  -- "Kleene star is a fraction" --, we can now conveniently prove, for instance, the well-known identity \(a(ba)^* = (ab)^*a\). 
+While the standard proof is rather lengthy and involves several axioms of Kleene algebra, our proof fits on a beer coaster (it was actually devised on such, see picture below) and goes as follows:
+\begin{align*}
+	a(ba)^* 
+	&{} = \frac{\quad{}~a~\quad{|}}{{|}\,1 - ba}\\
+	&{} = \frac{\quad{}1\quad{|}}{{|}\,\frac{1}{a} - b}
+	\tag{right-expand fraction by \(\frac{1}{a}\)}\\
+	&{} = \frac{{|}\quad{}~1~\quad}{\frac{1}{a} - b\,{|}}
+	\tag{by \(\frac{{|}\,1~}{~x\,{|}} = \frac{~1\,{|}}{{|}\,x~}\)}\\
+	&{} = \frac{{|}\quad{}~a~\quad}{1 - ab\,{|}}
+	\tag{left-expand fraction by \(a\)}\\
+	 &{} =(ab)^*a
+\end{align*}
+There are "only" two problems with all of the above: neither \({\ldots} - a\) nor \(\tfrac{1}{\ldots}\) make sense at the moment.
+
+Open Problem: How can we formally make sense of additive and multiplicative inverses on words, such that \(a^* = 1 + a + a^2 + {\dots} = \frac{1}{1 - a}\), i.e.\ such that \(a^* \cdot (1 - a) = 1\)?

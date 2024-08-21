@@ -1,0 +1,45 @@
+#+TITLE: 24.10 Functions Weakly-Computable by Vector Addition Systems
+#+AUTHOR: Roland Guttenberg
+#+EMAIL: guttenbe@in.tum.de
+#+DATE: <07-05-2024>
+#+TAGS: vass
+ 
+A vector addition system with states (VASS) is a finite graph \((Q,E)\) with
+labels in \(\mathbb{Z}^d\) and a designated initial state \(q_0\) and final
+state \(q_f\). The set of configurations is \(Q \times \mathbb{N}^d\), and a
+step according to an edge \(e=(p,q)\) labelled with \(v\) consists of moving
+from the current configuration \(p,x\) to \(q, x+v\), where \(x+v\) has to be
+in \(\mathbb{N}^d\) again.
+ 
+The standard definition of computing a function with a VASS is as follows: One
+of the \(d\) "counters", usually the first, is a designated input counter.
+Another counter, usually the second, is used for the output. The rest of the
+counters are called auxiliary counters. A VASS weakly-computes a function f if
+the following two conditions hold:
+ 
+
+1. For all \(x \in \mathbb{N}\), there exists some vector \(w' \in
+   \mathbb{N}^{d-2}\) and \(x' \in \mathbb{N}\) such that \(q_0, (x,0,0^{d-2})\)
+   can reach \(q_f, (x', f(x), w')\). I.e. the VASS can reach the final state with
+   the value \(f(x)\) in the output counter, the values left in auxiliary counters
+   are irrelevant.
+2. For all \(x,x',y' \in \mathbb{N}\) and vectors \(w' \in \mathbb{N}^{d-2}\),
+   if \(q_0, (x,0,0^{d-2})\) can reach \(q_f, (x', y', w')\), then \(y' \leq
+   f(x)\). I.e. if the VASS can reach the final state with a value \(y'\) in the
+   output counter, again irrespective of values left in the auxiliary counters,
+   then \(y' \leq f(x)\).
+
+{{{teaser_end}}}
+ 
+Despite this being the standard definition, surprisingly little is known about
+functions weakly-computable by vector addition systems. Essentially the only
+known properties are the following.
+ 
+1. They are monotone, i.e. if \(x \leq x'\), then \(f(x) \leq f(x')\).
+2. They are primitive-recursive, in particular computable.
+3. They grow at least linearly, or intuitively "have to grow steeper over time".
+ 
+To resolve the current state of no progress in this direction, I suggest the following open problems:
+ 
+1. Is \(2^{\sqrt{x}}\) weakly-computable? It would be quite surprising, since \(\sqrt{x}\) is not.
+2. Which linear recursive sequences (LRS) are weakly-computable? I conjecture that exactly the monotone LRS are weakly computable (asymptotically at least).

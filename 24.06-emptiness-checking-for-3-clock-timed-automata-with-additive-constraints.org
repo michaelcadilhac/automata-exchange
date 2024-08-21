@@ -1,0 +1,17 @@
+#+TITLE: 24.6 Emptiness-checking for 3-clock Timed Automata with additive constraints
+#+AUTHOR: R. Govind
+#+EMAIL: govind.rajanbabu@it.uu.se
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: timed automata, emptiness checking
+
+Timed automata are finite-state automata extended with finite real-valued variables called clocks. Timed automata with additive constraints are timed automata extended with atomic clock constraints of the form
+\[x + y \sim c\]
+where x and y are clocks, and c is a constant.
+
+The emptiness-checking problem for Timed automata with additive constraints was
+shown to be undecidable with only 4 clocks, while it is decidable for 2 clocks
+[Beìrard Duford '00]. However the case of 3 clocks was left open in the paper.
+
+*Question:* Is the emptiness-checking decidable for timed automata with additive
+ constraints for 3 clocks?

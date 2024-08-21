@@ -1,0 +1,14 @@
+#+TITLE: 24.7 Minimality for Deterministic Suffix-reading Automata 
+#+AUTHOR: B Srivathsan
+#+EMAIL: sri@cmi.ac.in
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: automata, verification
+
+Deterministic Suffix-reading Automata (DSA) are a model of automata over finite words introduced recently. DSAs are able to represent regular languages more succinctly than conventional DFAs. 
+
+Transitions in a DSA are labeled with words. From a state, a DSA triggers an outgoing transition on seeing a word ending with the transition's label. Therefore, rather than moving along an input word letter by letter, a DSA can jump along blocks of letters, with each block ending in a suitable suffix. This enables DSAs to represent regular languages more concisely. 
+
+This is a very recent model with plenty of open questions.  Here is one concrete question:  given a DSA, is it minimal? 
+
+For DFAs, this question can be answered by identifying a distinguishing string for every pair of states, thanks to the Myhill-Nerode theorem. No such characterization is known in the DSA setting.

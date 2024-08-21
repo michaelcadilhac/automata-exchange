@@ -1,0 +1,21 @@
+#+TITLE: 24.19 Reachability in Reversible Data VASS
+#+AUTHOR: Arka Ghosh
+#+EMAIL: a.ghosh@uw.edu.pl
+#+DATE: <2024-07-14>
+#+LAYOUT: post
+#+TAGS: algebra, automata, VASS
+
+Is the reachability problem decidable for reversible data VAS where the set of data values A satisfy the following properties:
+
+1. A is a homogeneous relational structure and has a linear order as one of its relations.
+2. The embedding relation on finite substructures of X labelled with natural numbers is a well quasi order.
+
+Some explanations: By saying A is a homogeneous relational structure we mean
+that any isomorphism between two finite substructures of A can be extended to
+an automorphism of A.
+
+Examples: Dense linear order, random/Rado graph.
+
+This question comes from the following paper with Sławomir Lasota:
+[arxiv:2402.17604] (arxiv)
+[doi:10.1145/3661814.3662074] (LICS'24 proceedings link).

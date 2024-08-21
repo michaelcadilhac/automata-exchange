@@ -1,0 +1,24 @@
+#+TITLE: 24.2 Positional Nash Equilibria
+#+AUTHOR: Antonio Casares
+#+EMAIL: antoniocasares@mimuw.edu.pl
+#+DATE: <2024-06-27>
+#+TAGS: positionality, parity games, Nash equilibria
+#+LAYOUT: post
+
+We consider multi-player infinite duration games on graphs. A game is given by a
+directed graph, with vertices partitioned in $k$ sets; Player $i$ controls
+vertices in the ith set. Edges are coloured with colours in a set $C$, and each
+player has an objective $W_i \subseteq C^\omega$. A strategy profile is an array
+of $k$ strategies, $\bar{\sigma} = (\sigma_1,\dots, \sigma_k)$, one for each
+player. It is a Nash equilibrium if no player has an incentive to change their
+strategy, that is: If $\bar{\sigma}$ produces a losing outcome for Player $i$,
+then Player $i$ cannot modify his strategy and obtain a winning outcome.\\
+
+It is known that, under some mild hypothesis on the objectives $W_i$, every game
+admits some Nash equilibrium. The proofs for this fact usually build a NE where
+strategies use infinite memory, even for games with very simple objectives.\\
+
+*Question:* Do all reachability/Büchi/parity games admit a Nash
+equilibrium in which all strategies are positional?
+
+

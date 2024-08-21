@@ -1,0 +1,22 @@
+#+TITLE: 24.3 Bi-reachability in Petri nets with ordered data
+#+AUTHOR: Łukasz Kamiński
+#+EMAIL: l.kaminski5@uw.edu.pl
+#+DATE: <2024-07-02>
+#+LAYOUT: post
+#+TAGS: Petri nets, Petri nets with data, bi-reachablility
+
+Petri nets with ordered data is an extension of Petri nets where tokens carry
+values from the set of rational numbers \(\mathbb{Q}\), and executability of
+transitions is conditioned by inequalities between data values. More precisely,
+every arc is labeled by a finite number of variables corresponding to the data
+values of tokens, and every transition is labeled by a first-order formula over
+a signature \(\{\leq\}\), where variables are from incident arcs. Data values of
+tokens produced and consumed by a transition must satisfy that formula. A
+configuration (marking) of a Petri net is a function that assigns to every place
+a finite multiset of rational numbers (data values carried by the tokens on this
+place). A configuration \(q'\) is reachable from a configuration \(q\) if there
+is a sequence of transition firings that leads from \(q\) to \(q'\). 
+
+*Question:* Is the following problem decidable?
+- Input: a Petri net with ordered data and its two configurations \(q, q'\).
+- Question: is \(q\) reachable from \(q'\) and \(q'\) reachable from \(q\)? 

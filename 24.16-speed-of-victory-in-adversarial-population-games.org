@@ -1,0 +1,41 @@
+#+TITLE: 24.16 Speed of victory in adversarial population games
+#+AUTHOR: Corto Mascle 
+#+EMAIL: corto.mascle@labri.fr 
+#+DATE: 2024-07-12
+#+LAYOUT: post
+#+TAGS: automata, parameterized games
+
+Population games involve two players, Laetitia and Terence, and an NFA with one
+initial and one final state. At the start, some number $N$ of tokens are placed
+on the initial state. At each turn, Laetitia chooses a letter $a$ and Terence
+moves each token along a transition labelled by $a$.
+ 
+The goal of Laetitia is that at some point all tokens are gathered on the final
+state, while Terence tries to avoid it indefinitely. It was shown in [1] that
+we can decide whether Laetitia wins for all number of tokens $N$. The proof
+uses an abstracted version of the game, called the \textit{capacity game}, in
+which the number of tokens is not written explicitly. In the journal version
+[2], it was shown that if Laetitia wins then she has a strategy to win in
+$O(N^k)$ steps, for all $N$, with $k$ depending only on the NFA.
+
+{{{teaser_end}}}
+
+On the other hand, we know that some games can be won in $O(log(N)^k)$ steps,
+or in $O(1)$ steps. We think that automata can be split in four classes:
+winnable in constant, polylog, polynomial number of steps, or not winnable at
+all. To sum up, here is what we know:
+
+1. It is PSPACE-complete to decide whether a game is winnable in
+   constant time, and if not then it requires at least polylog time.
+2. It is EXPTIME-complete to decide whether a game is winnable in
+   polynomial time, and if not then it is not winnable at all.
+ 
+The open problem is to complete this picture by proving the following conjecture:
+
+\(\diamond\) *It is decidable whether a game is winnable in polylog time, and if not then it requires at least polynomial time.*
+
+Ideally, this would come with complexity bounds.
+
+[1] Bertrand, Dewaskar, Genest, Gimbert, \(\textit{Controlling a population}\), CONCUR 2017 
+
+[2] Bertrand, Dewaskar, Genest, Gimbert, Godbole \(\textit{Controlling a population}\), LMCS-15(3), 2019

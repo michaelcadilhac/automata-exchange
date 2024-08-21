@@ -1,0 +1,18 @@
+#+TITLE: 24.4 Language Equivalence between Nondeterministic and Deterministic One-Counter Machines 
+#+AUTHOR: Aditya Prakash
+#+EMAIL: aditya.prakash@warwick.ac.uk
+#+DATE: <2024-07-02>
+#+LAYOUT: post
+#+TAGS: counter machines
+
+*Problem A:* Given a deterministic one-counter automaton (a pushdown automaton
+with one stack alphabet) \(A\) and a nondeterministic one-counter net (a
+one-counter automaton with no zero-tests) \(N\), decide if the language
+recognised by $A$ is the same as the language recognised by \(N\).
+
+Decidability of A is open. This is related to the open question of decidability
+for the following problem, which is relatively more well-known.
+
+*Problem B:* Given a deterministic one-counter net \(D\) and a nondeterministic
+one-counter net \(N\), decide if the language recognised by \(D\) is the same
+as the language recognised by \(N\).        

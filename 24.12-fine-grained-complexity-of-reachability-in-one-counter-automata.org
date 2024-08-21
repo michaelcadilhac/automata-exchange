@@ -1,0 +1,12 @@
+#+TITLE: 24.12 Fine-grained complexity of reachability in one-counter automata
+#+AUTHOR: A. R. Balasubramanian
+#+EMAIL: bayikudi@mpi-sws.org
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: automata, complexity, reachability
+
+We consider the reachability problem for one-counter automata. In this model, we have a finite set of states and a single counter with values over the natural numbers. Each transition can change the current state of the automaton as well as increment or decrement the current value of the counter by some number, encoded in binary. The reachability problem for this model is known to be NP-complete. However, the exact running time of the best
+possible deterministic algorithm for this problem is unknown.
+
+Similar to the theory of NP-completeness which lets us prove that various problems do not admit polynomial-time algorithms under some plausible assumptions,
+in recent years, a theory of fine-grained complexity has emerged which lets us pinpoint the exact running time of various problems under plausible hypotheses. It would be interesting to see the applicability of techniques from this field  for the reachability problem for one-counter automata.

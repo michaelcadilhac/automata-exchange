@@ -1,0 +1,53 @@
+#+TITLE: 24.14 Extending asynchronous subtyping for binary session types
+#+AUTHOR: Amrita Suresh
+#+EMAIL: amrita.suresh@cs.ox.ac.uk
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: communicating automata, channels, subtyping, session types
+
+ession types are constructs to define protocol interactions and automatically
+verify if an implementation meets its specifications. They extend data types to
+describe communication behaviour, specifying which types of messages can be
+sent or received and in what order. Session types are often represented by
+communicating automata, i.e. finite-state automata with FIFO channels or
+buffers to enable communication between them.
+
+A key challenge in using session types is ensuring that one component in a
+distributed system can be replaced by another without breaking the overall
+protocol. This issue is addressed by session subtyping, which is a preorder
+relation on session types. Formally, \(S'\) is considered a subtype of \(S\),
+written as \(S' \leq S\), if a program with type \(S\) can be safely replaced
+by a program with type \(S'\). 
+
+For synchronous communication, the session subtyping only needs to ensure
+that the subtype implements fewer internal choices (\(sends\)), and more
+external choices (\(receives\)), than its supertype.  However, for asynchronous
+communication, the reordering of messages is permitted, i.e. the subtype can
+anticipate \(send\) actions under the condition that all pending \(receives\)
+are eventually executed. This takes advantage of the asynchronous model and,
+hence, is more general. However, it was shown that deciding if two programs are
+subtypes under the asynchronous relation is undecidable.
+
+{{{teaser_end}}}
+
+Bravetti et al. [LMCS 2021] present a sound semi-decidable algorithm to decide
+this relation for binary session types. Session subtyping is defined following
+a co-inductive approach that formalises a check on the types that can be
+intuitively seen as a game. At each step of the game, the candidate subtype
+takes an action and the candidate supertype is expected to reply by performing
+a corresponding action. The game ends in two possible ways: either both types
+terminate by reaching their end state (success) or the candidate supertype is
+unable to reply to the challenge (failure).  The pre-emptive scheduling is
+taken care of by “input trees” which store the pending \(receives\) to be
+taken. This approach was greatly simplified by Bocchi et al. [TACAS 2022], and
+the input trees were replaced by sets of traces, which were then enlarged and
+described as regular expressions.
+
+This construction is much simpler than the previous ones, and covers most
+practical examples. However, there are still some open problems which can pave
+the way to a better understanding of asynchronous subtyping :
+
+- Can we relax the widening condition for the regular expressions in order to
+  capture more examples while retaining the simplicity of the construction?
+- Can we extend the trace representation to context-free languages, which can
+  prove subtyping on more complex problems?

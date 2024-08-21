@@ -1,0 +1,20 @@
+#+TITLE: 24.13 Satisfiability of String Constraints with Subsequence relation
+#+AUTHOR: C. Aiswarya
+#+EMAIL: aiswarya@cmi.ac.in
+#+DATE: <2024-07-05>
+#+LAYOUT: post
+#+TAGS: string constraints
+
+By \(\le\) we denote the (scattered) subsequence relation between words.
+Example: \(aba \le baabbabbb\). Fix a finite alphabet \(A\). Let \(X\) be a set
+of string variables. A subsequence constraint is an expression of the form \(x
+\le \alpha \) where \(x \in X\) and \(\alpha \in X^*\).  A homomorphism \(h:
+X^\ast \to A^*\) satisfies a subsequence constraint \(x \le \alpha \) if \(h(x)
+\le h(\alpha)\). A domain restriction constraint \(d: X \to RE(A)\) restricts
+the domain of possible values for a variable \(x\) to the regular language
+given by the regular expression \(d(e)\). We are interested in the decidability
+of the following problem:
+
+Input: A set  \(C\) of subsequence constraints and a domain restriction \(d\).
+Question:Is there a homomorphism \(h\) that respects the domain
+restriction \(d\) and satisfies every subsequence constraint in \(C\)?

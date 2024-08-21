@@ -1,0 +1,29 @@
+#+TITLE: 24.11 Membership of a coverability VASS in FO2
+#+AUTHOR: Vincent Michielini
+#+EMAIL: michielini@mimuw.edu.pl
+#+DATE: 2024-07-05
+#+TAGS: VASS, first-order logic, two variables, peacewise-testable languages
+
+A VASS of dimension \(d\) is an automaton where the transitions from states to
+states are given with a vector \(\bar{v}\in\mathbb{Z}^d\), meant to be added
+coordinate-wise to the current counter. A transition can only be taken if it
+keeps each coordinate non-negative. A language of words can either be
+recognised by reachability (one reads the word from an initial configuration
+\(\langle q_0,\bar{v}_0\rangle\) to a final one) or by coverability (one reads
+the word from an initial configuration to any configuration \(\langle
+q,\bar{v}\rangle\) which dominates coordinate-wise a specified one).
+
+We would like to investigate the following class of problems, for F being a
+class of regular languages: is the language recognised by a given VASS in F?
+
+In most cases, the problem is undecidable, but for different reasons, depending
+on how the VASS is recognised. If the VASS is recognised by reachability, the
+problem is undecidable as soon as the formalism F admits some very basic
+closure properties, hence there is little hope for obtaining anything
+interesting. However, if the VASS is recognised by coverability, then the
+problem is undecidable as soon as the class F contains LT (for Locally
+Testable), the class of languages definable in terms of prefixes, infixes, and
+suffixes. This leaves the problem open for F being for instance the
+well-studied class FO2 (First-Order Logic with two variables), or PTL (the
+class of languages being peacewise testable, meaning which are defined in terms
+of subwords).
