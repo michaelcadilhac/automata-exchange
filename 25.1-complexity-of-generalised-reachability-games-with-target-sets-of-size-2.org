@@ -1,0 +1,8 @@
+#+TITLE: 25.1 Complexity of generalised reachability games with target sets of size 2
+#+AUTHOR: Sarah Winter
+#+EMAIL: sarah.winter@irif.fr
+#+DATE: <2025-07-14>
+#+LAYOUT: post
+#+TAGS: games on graphs
+
+Fijalkow and Horn studied generalised reachability games on graphs, which requires Player 1 to visit at least one vertex from each given target set. In general, this problem is PSPACE-complete, even if all target sets are of size 3. Furthermore, if all target sets are of size 1, the problem is solvable in PTIME. However when all target sets are of size at most 2, the complexity is currently unknown. Hence, the best known upper bound is PSPACE and the best known lower bound is PTIME. Can we obtain better upper or lower bounds for this case?

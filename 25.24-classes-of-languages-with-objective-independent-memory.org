@@ -1,0 +1,14 @@
+#+TITLE: 25.24 Classes of languages with objective-independent memory
+#+AUTHOR: Corto Mascle
+#+EMAIL: cmascle@mpi-sws.org
+#+DATE: <2025-06-11>
+#+LAYOUT: post
+#+TAGS: games, formal languages
+
+We start from the following fact: Given a two-player game arena \(G\) labelled with an alphabet \(\Sigma\), and an objective \(W \subseteq \Sigma^\omega\) for Player 1, if \(W\) is closed by subwords then if Player 1 has a winning strategy, she has one using memory \(\leq |G|!\). The remarkable thing is that this memory does not depend on \(W\), just on \(G\).\(\\\)
+
+We say that a class of languages \(\mathcal{C}\) has the \(\textit{objective-independent memory property}\) if there is a function \(f\) such that for all arena \(G\) and \(W \in C\), if Player 1 has a winning strategy for \(W\) in \(G\) then she has one using memory \(\leq f(|G|)\). This property is useful in distributed synthesis. As we saw above, the class of subword-closed languages has this property, with \(f\) the factorial function.\(\\\)
+
+The problem is to characterise classes of languages with this property, or at least identify some non-trivial examples.
+A first step could be to show that for all \(k\), the class \(C_k\) of languages recognised by automata with SCCs of size at most \(k\) has this property, and identify some classes that have that property but are not subsumed by some \(C_k\).
+

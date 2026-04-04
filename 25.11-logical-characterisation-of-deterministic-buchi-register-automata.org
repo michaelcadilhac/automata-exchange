@@ -1,0 +1,19 @@
+#+TITLE: 25.11 Logical Characterisation of Deterministic Büchi Register Automata
+#+AUTHOR: Mrudula Balachander
+#+EMAIL: mrudula.balachander@ulb.be
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: automata, logic, synthesis, infinite alphabets
+
+Deterministic Büchi register automata (DBRA) over infinite alphabets with equality tests have desirable algorithmic properties, including the decidability of synthesis, known to be EXPTIME [1]. At the same time, logics such as Freeze LTL (LTL\(\downarrow\)), constraint LTL, and variable LTL provide well-studied formalisms for reasoning over infinite data words. [2, 3, 4, 5].\(\\\)
+
+Open Problem:\(\\\)
+
+Is there a temporal logic (or suitable logical fragment) that exactly characterises, or at least translates effectively into, deterministic Büchi register automata (DBRA) over infinite alphabets with equality tests?\(\\\)
+
+[1] Exibard, Léo, Emmanuel Filiot, and Pierre-Alain Reynier. "Synthesis of data word transducers." Logical Methods in Computer Science 17 (2021).\(\\\)
+[2] Demri, Stéphane, and Karin Quaas. "Constraint automata on infinite data trees: from CTL (Z)/CTL*(Z) to decision procedures." Logical Methods in Computer Science 21 (2025).\(\\\)
+[3] Stéphane Demri and Ranko Lazić. 2009. LTL with the freeze quantifier and register automata. ACM Trans. Comput. Logic 10, 3, Article 16 (April 2009), 30 pages.\(\\\)
+[4] Rodríguez, Andoni, and César Sánchez. "Realizability modulo theories." Journal of Logical and Algebraic Methods in Programming 140 (2024).\(\\\)
+[5] Faran, Rachel, and Orna Kupferman. "LTL with Arithmetic and its Applications in Reasoning about Hierarchical Systems." LPAR. Vol. 18. 2018.
+

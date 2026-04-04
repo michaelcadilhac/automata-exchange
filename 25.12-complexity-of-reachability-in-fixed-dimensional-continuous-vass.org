@@ -1,0 +1,12 @@
+#+TITLE: 25.12 Complexity of Reachability in Fixed-Dimensional Continuous VASS
+#+AUTHOR: A. R. Balasubramanian
+#+EMAIL: bayikudi@mpi-sws.org
+#+DATE: <2025-07-14>
+#+LAYOUT: post
+#+TAGS: VASS, complexity, reachability
+
+A \(d\)-dimesional continuous VASS is a counter system, which consists of a finite set of states and \(d\) counters, each of which can hold a non-negative rational number. A transition of such a machine consists of an integer vector \(\mathbf{v} \in \mathbb{Z}^d\), which allows us to update the counters as follows: Upon taking this transition, we first select some non-zero fraction \(\alpha \in (0,1]\) and then add the vector \(\alpha \cdot \mathbf{v}\) co-ordinate-wise to our current counter values. Since each counter can only hold a non-negative rational number, while adding the vector \(\alpha \cdot \mathbf{v}\), we have to ensure that no counter value becomes negative.\[\]
+
+The reachability problem for continuous VASS is the problem of deciding whether a given source configuration of a continuous VASS can reach a given target configuration. It is known that this problem is NP-complete.
+When the dimension \(d\) is fixed and all vectors are encoded in binary, it is known that the problem is NL-complete if \(d = 1\) and NP-complete if \(d \ge 2\). However when \(d\) is fixed and all vectors are encoded in unary, the complexity is unknown, which leads to the following question: What is the complexity of reachability in continuous VASS when the dimension \(d\) is fixed?
+

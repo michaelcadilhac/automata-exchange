@@ -1,0 +1,27 @@
+#+TITLE: 25.21 Simulation decidability in Gap-order Constraint Systems
+#+AUTHOR: Isa Vialard
+#+EMAIL: vialard@mpi-sws.org
+#+DATE: <2025-07-06>
+#+LAYOUT: post
+#+TAGS: simulation, infinite-state systems, well-quasi-order
+
+A Gap-order Constraint System (GCS) is a finite automaton with counters \((c_1,\dots c_n)\)
+where every transition bears conditions of the form \(x-y\geq n\) where \(n\) is a non-negative constant, and \(x,y\in \{c_1,\dots,c_n,c'_1,\dots,c'_n\}\cup\mathbb{N}\) where \(c_i\) denotes the value of counter \(c_i\) before the transition, and \(c'_i\) the value of \(c_i\) after the transition. For instance, a condition \(c'_1-c_1\geq 1\) on a transition means that it increases counter \(c_1\) by \(1\) or more. A condition \(c_1-0\geq 0 \wedge 0-c_1\geq 0\) means a transition requires \(c_1\) to be \(0\).\[\\\]
+
+The problem that interests us is the simulation problem:\(\\\)
+Input: Two transition systems, one belonging to player Spoiler, the other to player Duplicator.
+Each time Spoiler makes a move on her GCS, Duplicator makes an equivalent move on his GCS.
+If the games goes on forever, Duplicator wins. If one player cannot make a move, the other player wins.\(\\\)
+Output: Does Duplicator have a winning strategy?\[\\\]
+
+This game has variants:\(\\\)
+
+Weak simulation: Duplicator has a set of free transtions, which he can takes in between turns.\(\\\)
+
+Bi-simulation: Spoiler has a switching power, she can switch transition systems with Duplicator between turns.\[\\\]
+
+
+Bisimulation between GCSs has been shown to be undecidable. However, (weak) bisimulation between a GCS and a finite automaton (FA) is decidable.
+The question of simulation between two GCSs is still open, as well as the questions:
+Does a FA simulate a GCS ? and: Does a GCS simulate a FA?
+

@@ -1,0 +1,30 @@
+#+TITLE: 25.19 Complete techniques for deducing Fair Almost-Sure Termination
+#+AUTHOR: V.R. Sathiyanarayana
+#+EMAIL: sramesh@mpi-sws.org
+#+DATE: <2025-07-03>
+#+LAYOUT: post
+#+TAGS: probabilistic programs, proof rules, termination
+
+Take the setting of probabilistic Turing machines with nondeterminism.
+In these machines, the control states are partitioned into the probabilistic and nondeterministic states.
+Each of these states are associated with finite sets of transitions that can be taken at that state.
+Probabilistic states associate probability distributions across available transitions at these states.
+Successors at these states are picked according to this distribution.
+At nondeterministic states, however, successors are determined by \(\textit{schedulers}\).
+Schedulers are functions that map finite program histories to decisions at nondeterministic states.
+Given a machine, they produce execution trees that branch at probabilistic configurations by resolving the nondeterminism in the execution.\(\\\)
+
+Call a transition nondeterministic if it originates at a nondeterministic state.
+Infinite executions of these programs enable a nondeterministic transition infinitely often if they visit the origin of that transition infinitely often.
+With a scheduler and an initial state, the unrolled execution of these machines are trees that branch at probabilistic states.
+For such a machine M, call a scheduler fair if, in all infinite executions it induces, all nondeterministic transitions enabled infinitely often are taken by the scheduler infinitely often.\(\\\)
+
+
+Consider the decision problem of deciding if a probabilistic nondeterministic Turing machine terminates with probability 1 under all fair schedulers.
+What is the recursion-theoretic complexity of this problem?
+Note this this problem is trivially undecidable, and that the corresponding decision problem for non-probabilistic Turing machines is known to be \(\Pi^1_1\)-complete.\(\\\)
+
+
+Separately, Hoare-style proof systems for reasoning about properties of non-probabilistic programs (written in a Turing-complete language) under fair schedulers have been studied in the 80s.
+Such proof systems provided rules for deducing the fair termination of these programs that are both sound and complete.
+Naturally, we ask: what are sound and complete techniques for deducing the fair almost-sure termination of probabilistic programs?

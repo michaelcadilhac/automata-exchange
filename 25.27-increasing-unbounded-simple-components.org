@@ -1,0 +1,47 @@
+#+TITLE: 25.27 Increasing-unbounded Simple Components
+#+AUTHOR: Michal Ajdarow
+#+EMAIL: xajdarow@mail.muni.cz
+#+DATE: <2025-07-05>
+#+LAYOUT: post
+#+TAGS: MDP, VASS
+
+A one-counter MDP (OC-MDP) \(M\)  is an MDP where each transition is labeled
+by an integer which is added to the counter whenever the transition is taken. A
+counterless MD strategy (cMD) \(\sigma\) on \(M\) is a function assigning to
+each state a single action. Applying \(\sigma\) to \(M\) yields a one-counter
+Markov chain \(M_\sigma\). We call a sub-OC-MDP of \(N\) a simple component of
+\(M\) if \(N\) is exactly a BSCC of \(M_\sigma\) for some cMD strategy
+\(\sigma\). Given a simple component \(N\), let \(p\) be some state of \(N\)
+and let \(X\) be a random variable encoding the change of the counter of a run
+on \(N\) initiated in \(p\) and till \(p\) is revisited for the first time. Let
+E(X) denote the expected value of \(X\).\(\\\)
+
+We define the following (note it can be shown these are invariant to the
+choice of \(p\)):\(\\\)
+- \(N\) is bounded if \(P(X=E(X))=1\),\(\\\)
+- \(N\) is unbounded if \(P(X=E(X))<1\).\(\\\)
+and:\(\\\)
+- \(N\) is increasing if \(E(X)>0\),\(\\\)
+- \(N\) is zero if \(E(X)=0\),\(\\\)
+- \(N\) is decreasing if \(E(X)<0\).\(\\\)
+
+For example a simple random walk (+-1 with equal probability) would have a
+single zero-unbounded simple component.\[\\\]
+
+The question is:
+
+Given a OC-MDP \(M\), what is the complexity of deciding whether \(M\)
+contains an increasing-unbounded simple component?
+What is the complexity of this problem for the subclass of OC-MDPs that contain
+no decreasing simple components?
+
+These are trivially in NP, but can they be solved in PTIME?
+
+
+Alternatively, is there a way to effectively encode all increasing-bounded (or
+increasing-unbounded) simple components? (for example for the class of OC-MDPs
+containing no decreasing simple components there exists a set \(R\) of transitions
+such that \(N\) is zero-bounded iff \(N\) contains only transitions from \(R\)). \(\\\)
+
+Bonus problem (very difficult): is it decidable in PTIME whether a given
+OC-MDP contains a simple component with \(P(X<0)=0\)?

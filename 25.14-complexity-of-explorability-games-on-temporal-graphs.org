@@ -1,0 +1,13 @@
+#+TITLE: 25.14 Complexity of Explorability games on temporal graphs
+#+AUTHOR: Sougata Bose
+#+EMAIL: sougata.bose@umons.ac.be
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: games on graphs, temporal graphs
+
+Definitions: A temporal graph is a graph where in addition to set of vertices and edges, for each edge, a set of times at which times it can be traversed is specified. Depending on how the edge availability relation is specified, this results in different complexity for different problems. We are interested in the formalism where the edge availability relation is specified, by specifying for every edge, an existential Presburger arithmetic formula with one free variable \(\phi(x)\), such that the edge is available at time \(t\) iff \(\phi(t)\) holds.\(\\\)
+
+A temporal arena is a temporal graph where the set of vertices is partitioned between two opposing players, Adam and Eve. A temporal game is then a temporal arena along with a winning objective for Eve, specifying the winning plays for Eve. The explorability objective requires Eve to visit all vertices of the arena.\(\\\)
+
+Question: Given a temporal arena with edge availability specified using existential Presburger formula, checking if Eve has a winning strategy for the explorability objective is known to be PSPACE-hard (even if all vertices are controlled by Eve) and in EXPTIME. Can we find matching upper or lower bound?
+

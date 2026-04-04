@@ -1,0 +1,10 @@
+#+TITLE: 25.4 Efficient LRS evaluation
+#+AUTHOR: Lorenzo Clemente
+#+EMAIL: clementelorenzo@gmail.com
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: algebra, automata, formal series
+
+Consider a linear recurrence sequence \(f : \mathbb N \to \mathbb Q\).
+Given an input index \(n \in \mathbb N\) in binary encoding, decide whether \(f(n) = 0\).
+Can this be done in polynomial time?

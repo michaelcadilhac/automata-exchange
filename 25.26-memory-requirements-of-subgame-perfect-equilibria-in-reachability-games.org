@@ -1,0 +1,14 @@
+#+TITLE: 25.26 Memory requirements of subgame perfect equilibria in reachability games
+#+AUTHOR: James C. A. Main
+#+EMAIL: james.main@umons.ac.be
+#+DATE: <2025-07-04>
+#+LAYOUT: post
+#+TAGS: games
+
+A subgame perfect equilibrium (SPE) is a formalisation of rational behaviour in multiplayer games that is a special case of Nash equilibria (NEs). An NE is a strategy profile such that no player has any incentive (with respect to their objective) to unilaterally deviate from their strategy in the profile. An SPE is a strategy profile that is an NE in every subgame, i.e., such that, if we initialise the play with any history of the game, then no player has an incentive to deviate.\[\\\]
+
+Brihaye et al. (Inf. Comp. 2021) have shown that in \(n\)-player reachability games on finite arenas with \(m\) vertices, a memory of size at most \(m^3\cdot n\cdot 2^{3n}\) for each player suffices to construct an SPE whose outcome satisfies the objectives of a subset of players whenever such an SPE exists. This bound implies that their argument for finite-memory does not generalise to infinite arenas. This suggests the following related problems:\(\\\)
+
+1. Do finite-memory SPEs always exist in reachability games on infinite arenas?\(\\\)
+2. Given an SPE of a reachability game, does there exist a finite-memory SPE that enforces the same objectives?\(\\\)
+3. Can we provide memory bounds that are independent of the arena size for SPEs (satisfying a given subset of objectives) in reachability games?

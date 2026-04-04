@@ -1,0 +1,10 @@
+#+TITLE: 25.10 Fine Grained Complexity for VAS Boundedness
+#+AUTHOR: Lia Schütze
+#+EMAIL: lschuetze@mpi-sws.org
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: vector addition systems,vas,boundedness,fine-grained complexity
+
+A (\(d\)-dimensional) Vector Addition System is a set of vectors \(T \subseteq \mathbb Z^d\) and induces a single-step transition relation \(\mathrm\rightarrow\ \subseteq \mathbb N^d \times \mathbb N^d\) by \(\mathbf u \rightarrow \mathbf v \Leftrightarrow \mathbf v = \mathbf u + \mathbf t\) for some \(\mathbf t \in T\). The transitive closure of \(\rightarrow\), \(\rightarrow^*\), is called the reachability relation and for some vector \(\mathbf u \in \mathbb N^d\), we call \(R(\mathbf u) = \{\mathbf v \mid \mathbf u \rightarrow^* \mathbf v\}\) the reachability set of \(\mathbf u\). \(\\\)
+
+The boundedness problem for VAS asks if, given a vector \(\mathbf u\), the set \(R(\mathbf u)\) is finite. It has been long known that the boundedness problem for VAS is EXPSPACE-complete. A more careful analysis reveals an upper bound of \(\mathcal O(n^{2^{d \log d}})\). A similar upper bound for VAS coverability was recently tightened to \(\mathcal O(n^{2^d})\). Can we tighten the upper bound for boundedness too?

@@ -1,0 +1,16 @@
+#+TITLE: 25.17 Tree automata with constraints on infinite trees
+#+AUTHOR: Leon Pernak
+#+EMAIL: pernak@math.uni-sb.de
+#+DATE: <2025-07-04>
+#+LAYOUT: post
+#+TAGS: tree automata, infinite tree, relation, constraint
+
+Fix a finite alphabet \(A\). Denote by \(T\) the set of \(A\)-labellings of the complete infinite binary tree, i.e. maps \(\{0,1\}^*\rightarrow A\).
+Let \(R \subseteq T \times T\) be an (equivalence) relation of such trees.
+A (binary) tree automaton with \(R\)-constraints consists of a finite state set \(Q\), an initial state \(q_0 \in Q\), and a transition relation \(\Delta\subseteq (Q \times A\times \{R,\neg R\}) \times (Q \times Q)\).
+A run of a tree automaton on a tree labelling \(\lambda:\{0,1\}^*\rightarrow A\) is a choice of states \(q:\{0,1\}^*\rightarrow Q\) and transitions \(t:\{0,1\}^*\rightarrow \Delta\) for each vertex such that \(q(\epsilon)=q_0\) and \(t(w)=(q(w),\lambda(w),X,q(w0),q(w1))\), where \(X=R\) if the left and right subtree of \(w\) are in \(R\)-relation and \(X=\neg R\) otherwise.
+A tree automaton accepts a labelling if there is a run for it. This can be extended to different more intricate acceptance conditions (Büchi condition along paths, parity conditions, ...). The set of labellings accepted by an automaton is called its language.
+The following questions might depend to some extent on the nature of the relation \(R\) and should be understood as "for your favourite/interesting \(R\)". \[\\\]
+Question: Is emptiness/universality decidable for these automata?\(\\\)
+Question: What are the closure properties for these language classes?
+

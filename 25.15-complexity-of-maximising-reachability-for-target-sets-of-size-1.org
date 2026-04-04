@@ -1,0 +1,9 @@
+#+TITLE: 25.15 Complexity of Maximising reachability for target sets of size 1
+#+AUTHOR: Sougata Bose
+#+EMAIL: sougata.bose@umons.ac.be
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: games on graphs, reachability
+
+Fijalkow and Horn studied generalised reachability games on graphs, which requires Eve (Player 1) to visit vertices from several different target sets. If all target sets are of size 1, the problem is solvable in PTIME. We are interested in the complexity of determining how many target sets Eve can guarantee to visit, i.e, given an arena, target vertices \(v_1, v_2, \dots, v_n\), and a \(k\leq n\), does Eve have a strategy that ensures at least \(k\) targets are visited? This is known to be in PSPACE and NP-hard. Can we obtain better upper or lower bounds?
+

@@ -1,0 +1,13 @@
+#+TITLE: 25.5 Commutative polynomial automata series
+#+AUTHOR: Lorenzo Clemente
+#+EMAIL: clementelorenzo@gmail.com
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: algebra, automata, formal series
+
+A series \(f : \Sigma^* \to \mathbb Q\) is commutative if the output does not depend on the order of the symbols in the input.
+Given a polynomial automaton recognising a commutative series,
+does there exist an equivalent polynomial automaton where all control states recognise commutative series?
+The answer for weighted automata is yes.
+
+

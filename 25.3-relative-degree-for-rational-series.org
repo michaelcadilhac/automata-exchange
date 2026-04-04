@@ -1,0 +1,12 @@
+#+TITLE: 25.3 Relative degree for rational series
+#+AUTHOR: Lorenzo Clemente
+#+EMAIL: clementelorenzo@gmail.com
+#+DATE: <2025-07-07>
+#+LAYOUT: post
+#+TAGS: algebra, automata, control theory
+
+Consider a two letter alphabet \(\Sigma = \{a, b\}\).
+A formal series \(f : \Sigma^* \to \mathbb Q\) has relative degree \(r \in \mathbb N\) if
+1) all words \(w \in \Sigma^*\) in its support \(f(w) \neq 0\) are of the form \(w \in a^r \cdot \Sigma^* \), and
+2) \(f(a^r \cdot b) \neq 0\).
+Decide whether a rational series has a relative degree.

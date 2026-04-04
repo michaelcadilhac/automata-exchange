@@ -1,0 +1,24 @@
+#+TITLE: 25.28 A Streaming Machine Model for Polyregular Functions
+#+AUTHOR: S. Krishna
+#+EMAIL: krishnas@cse.iitb.ac.in
+#+DATE: <2025-07-14>
+#+LAYOUT: post
+#+TAGS: automata, transducers
+
+The class of polyregular functions corresponds to the class of functions accepted by reversible,  two-way pebble transducers. As the name suggests, the lengths of the generated outputs are
+polynomial in the lengths of the input, unlike regular, rational and sequential functions, where the output length is linear in the length of the input. Regular functions are known to be captured
+by deterministic two-way transducers.  There is an attractive, one-way machine for regular functions, namely,  deterministic "copyless" streaming string transducers (SST). Like two-way transducers,
+SSTs are closed under composition.
+
+
+\[ \]
+
+
+The question of interest is the following.
+
+\[ \]
+
+Can we define a one-way, streaming model to capture polyregular functions, in the spirit of SSTs?  It is known that
+polyregular functions define the smallest class of functions closed under composition containing sequential functions,
+squaring as well as iterated reverse. The question therefore is to come up with a streaming model
+with "controlled copying" which will be closed under composition, and which can define squaring as well as iterated reverse.

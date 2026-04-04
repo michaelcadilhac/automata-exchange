@@ -1,0 +1,10 @@
+#+TITLE: 25.22 Fine-grained complexity of omega-automata inclusion
+#+AUTHOR: Antonio Casares
+#+EMAIL: antoniocasaressantos@gmail.com
+#+DATE: <2025-06-19>
+#+LAYOUT: post
+#+TAGS: polynomial-time, parity automata, ETH
+
+The inclusion problem asks whether the language of an automaton \(A\) is included in that of an automaton \(B\). If the automaton \(B\) is deterministic, this problem can be solved in almost quadratic time by a product construction, and this bound is optimal: a \(o(n^2)\) algorithm would contradict ETH (Wehar 2016). For automata over infinite words, the problem is still in PTIME (in NL in fact), but its exact complexity is unknown. \[\\\]
+
+\(\textbf{Goal:}\) Find upper and lower bounds on \(k\) such that the inclusion of deterministic parity automata can(not) be checked in time \(O(n^k)\).

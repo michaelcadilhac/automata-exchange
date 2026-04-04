@@ -1,0 +1,15 @@
+#+TITLE: 25.2 Permissive strategies for reachability games
+#+AUTHOR: B. Srivathsan
+#+EMAIL: sri@cmi.ac.in
+#+DATE: <2025-07-20>
+#+LAYOUT: post
+#+TAGS: games on graphs
+
+A strategy in a two player game on graphs is said to be "permissive" if it is winning and it allows all behaviours of all winning memoryless strategies. For safety objectives, there is a most permissive strategy, and this most permissive strategy is in fact memoryless [Bernet, Janin, Walukiewicz'2002]. On the other hand, for reachability objectives, permissive strategies require memory.\(\\\)
+
+What is the complexity of the following problem:\(\\\)
+
+Given a reachability game and a constant c, does there exist a permissive strategy with memory at most c?\(\\\)
+
+It can be assumed that the constant c is at most the size of the game. So its encoding does not matter.
+

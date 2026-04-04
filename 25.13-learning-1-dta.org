@@ -1,0 +1,8 @@
+#+TITLE: 25.13 Learning 1-DTA
+#+AUTHOR: Kyveli Doveri
+#+EMAIL: kdoveri@mimuw.edu.pl
+#+DATE: <2025-07-17>
+#+LAYOUT: post
+#+TAGS: automata
+
+All known algorithms for learning deterministic one clock timed automata (1-DTA)  using equivalence and membership queries and without making assumptions on the teacher, require an exponential number of membership queries in the worst case. Prove that it is not possible to do better than that.

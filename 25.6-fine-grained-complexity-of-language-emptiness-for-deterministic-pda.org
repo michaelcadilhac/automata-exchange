@@ -1,0 +1,12 @@
+#+TITLE: 25.6 Fine-grained complexity of language emptiness for deterministic PDA
+#+AUTHOR: Neha Rino
+#+EMAIL: neha.rino@warwick.ac.uk
+#+DATE: <2025-07-05>
+#+LAYOUT: post
+#+TAGS: automata, pushdown automata, fine-grained complexity
+
+\(\textbf{Input: }\) A deterministic pushdown automaton \(\mathcal{P}\), with \(n\) states and constantly many input and stack letters. \(\\ \)
+\( \textbf{Output:}\) Yes, if \(\mathcal{L(P)}\) is empty. No, otherwise. \(\\ \)
+\(\textbf{Question: }\) What is the fine-grained complexity of this problem? Can we obtain an improved upper bound \((\mathcal{O}(n^{3-\epsilon})\) or an improved conditional lower bound \((\Omega(n^{2 + \epsilon}))\) for this problem? \(\\ \)
+
+\(\textbf{Context: }\)The best known upper bound for this problem seems to be \(\mathcal{O}(n^3)\) time by using the standard method for solving pushdown emptiness. The best known fine-grained reduction seems to be from the Orthogonal Vectors conjecture or the Strong Exponential Time Hypothesis, either of which gives a quadratic lower bound. Other existing fine-grained reductions from pushdown automata emptiness to hard problems like triangle detection, clique detection, or NFA acceptance all seem to require nondeterminism. These reductions can be determinized by using an \(\mathcal{O}(n)\) sized input alphabet, but encoding this alphabet in binary can result in an \(\mathcal{O}(n^2)\) sized state set. It is not obvious how to avoid this blowup, but the problem already seems hard for a constant-sized alphabet.

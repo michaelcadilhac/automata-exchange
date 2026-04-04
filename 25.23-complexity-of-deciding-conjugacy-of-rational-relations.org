@@ -1,0 +1,16 @@
+#+TITLE: 25.23 Complexity of deciding conjugacy of rational relations
+#+AUTHOR: Ismaël Jecker
+#+EMAIL: ismael.jecker@gmail.com
+#+DATE: <2025-07-05>
+#+LAYOUT: post
+#+TAGS: automata, transducers, word combinatorics
+
+The conjugacy problem for rational relations can be stated as follows:\(\\\)
+
+\(\textbf{Input:}\) A rational relation defined by a letter-to-letter finite state transducer \(\mathcal{T}\), that is, a finite state automaton whose transitions are labeled by pairs of letters \((a,b)\) (rather than by single letters).\(\\\)
+
+\(\textbf{Question:}\) Is it true that for every accepting run of \(\mathcal{T}\), the concatenation \(a_1a_2\cdots a_n\) of the first components of the labels is a \(\textit{cyclic shift}\) of the concatenation \(b_1b_2\cdots b_n\) of the second components? That is, does there exist \(1 \leq j \leq n\) such that: 1) \(a_i = b_{i+j}\) for all \(1 \leq i \leq n-j\), and 2) \(a_i = b_{i+j-n}\) for all \(n-j < i \leq n\).\(\\\)
+
+This problem is known to be decidable (see \(``\textit{Deciding conjugacy of a rational relation}"\) by C. Aiswarya, Amaldev Manuel, and Saina Sunny). However, the known decision procedure relies on describing the rational relation using a form of regular expressions.
+
+Is there a more efficient algorithm that works \(\textit{directly}\) on the finite state transducer, without converting it into a regular expression?

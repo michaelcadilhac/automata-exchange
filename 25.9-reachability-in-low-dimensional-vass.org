@@ -1,0 +1,10 @@
+#+TITLE: 25.9 Reachability in Low-Dimensional VASS
+#+AUTHOR: Łukasz Orlikowski
+#+EMAIL: l.orlikowski@mimuw.edu.pl
+#+DATE: <2025-07-04>
+#+LAYOUT: post
+#+TAGS: VASS, reachability, complexity
+
+A \(d\)-dimensional Vector Addition System with States (\(d\)-VASS) is a finite automaton equipped with a finite set of states \(\mathrm{Q}\) and \(d\) non-negative counters. Each transition updates the counters by adding a vector \(v \in \mathbb{Z}^d\) coordinate-wise, provided that no counter becomes negative in the process. The reachability problem asks whether a run exists from a given source configuration \(s \in \mathrm{Q} \times \mathbb{N}^d\) to a target configuration \(t \in \mathrm{Q} \times \mathbb{N}^d\). It is known that reachability is TOWER-hard when \(d = 8\). An open question is whether this TOWER-hardness result can be achieved in a lower dimension. \(\\\)
+
+Recently, significant attention has been given to the geometric dimension of VASS, defined as the dimension of the vector space spanned by the effects of all cycles. As an intermediate step, one may ask whether the TOWER-hardness result can be established for VASS of lower geometric dimension.

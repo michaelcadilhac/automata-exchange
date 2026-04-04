@@ -1,0 +1,31 @@
+#+TITLE: 25.25 Do probabilities matter for resolving nondeterminism?
+#+AUTHOR: K. S. Thejaswini
+#+EMAIL: thejaswini.k.s@ista.ac.at
+#+DATE: <2025-07-08>
+#+LAYOUT: post
+#+TAGS: automata, probabilities
+
+Consider a nondeterministic parity automaton
+\(A = (Q, \Sigma, \Delta, q_0, \Omega),\)
+where:
+\(Q\) is a finite set of states,
+\(\Sigma\) is the input alphabet,
+\(\Delta \subseteq Q \times \Sigma \times Q\) is the transition relation,
+\( q_0 \in Q\) is the initial state, and
+\(\Omega : Q \to \mathbb{N}\) is the parity acceptance condition.
+We say that a probabilistic automaton \(P\) is obtained from a memoryless resolver for \(A\) if, for each state \(s \in Q\) and input symbol \(a \in \Sigma\), the nondeterministic set of successors
+\[\{ t \in Q \mid (s, a, t) \in \Delta \}
+\]
+is replaced by a probability distribution \(D_s^a\) over that set. The resulting probabilistic automaton \(P\) retains the same state set \(Q\), alphabet \(\Sigma\), and initial state \(q_0\), but transitions are decided by the probability distributions \(
+\{ D_s^a \}_{s \in Q, a \in \Sigma},
+\) which define the probability of moving from state \(s\) to state \(t\) upon reading symbol \(a\).\(\\\)
+
+We say that \(A\) is memoryless stochastically resolvable if there exists a probabilistic automaton \(P\), obtained from a memoryless resolver as described above, such that for every infinite word \(w \in \Sigma^\omega\) accepted by \(A\), the probabilistic automaton \(P\) also accepts \(w\) with probability 1.
+
+Moreover, we say that \(P\) is obtained from **uniform memoryless resolver** if, for all \(s \in Q\) and \(a \in \Sigma\), the distribution \(D_s^a\) is uniform over the set
+\(
+\{ t \in Q \mid (s, a, t) \in \Delta \}.
+\)
+This leads to the question:
+If a nondeterministic parity automaton \(A\) is stochastically resolvable using a memoryless resolver, is it always possible to construct such a resolver using uniform distributions?
+

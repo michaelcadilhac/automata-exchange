@@ -1,0 +1,21 @@
+#+TITLE: 25.18 Lower-bound for the decision of guidability
+#+AUTHOR: Olivier Idir
+#+EMAIL: idir@irif.fr
+#+DATE: <2025-07-04>
+#+LAYOUT: post
+#+TAGS: tree automata, complexity, simulation
+
+Guidable automata are a subclass of parity tree automata introduced by Colcombet and Löding [ICALP08], with a universal simulation property : An automaton \(A\) is guidable if, for all automata \(B\) recognizing a sublanguage of \(L(A)\), there exists a finite "guiding function" for \(B\) that converts an accepting run of \(B\) over a tree \(t\) in an accepting run of \(A\) over \(t\). More precisely, let \(A = (Q_A, \Sigma, q_0, \Delta_A, col_A : \Delta_A \to \mathbb{N})\) be a parity automaton recognizing a tree language \(L\). It is said guidable if, for all parity automaton \(B = (Q_B, \Sigma, q_{0,B}, \Delta_B, col_B : \Delta_B \to \mathbb{N})\) recognizing \(L'\) a sublanguage of \(L\), there exists a guiding function \(g_B: Q_A \times \Delta_B \to \Delta_A\) with the following properties:\[\\\]
+
+1) \(g_B(p, (q, a, q', q'' )) = (p, a, p', p'' )\) for some \(p' , p'' \in Q_A\) \(\\\)
+2) For every accepting run \(\rho\) of \(B\) over a tree \(t\), \(g_B(\rho)\) is an accepting run of \(A\) over \(t\), where \(g_B(\rho) = \rho'\) is the unique run such that \(\rho'(\varepsilon) = q_0\) , and for all \(u \in \{0,1\}^∗\), \((\rho' (u), t(u), \rho' (u0), \rho'(u1)) = g_B(ρ' (u), (\rho(u), t(u), \rho(u0), \rho(u1)))\).\[\\\]
+
+In that case, we say that \(B\) guides \(A\). \[\]
+
+Guidable automate can be seen as some kind of extension of History Deterministic automata to tree languages. They also seem to have a strong link with the Mostowski index problem, that is, the minimal index required to recognize a tree language with a parity automaton.
+
+Colcombet and Löding established that for all \(\omega\)-regular tree language \(L\) there effectively exists a guidable automaton recognizing \(L\), that can be built in 2EXP time and space. Löding also exhibited [Habilitation thesis,09] an automaton that does require this 2EXP blowup in order to exhibit a guidable automaton for this language.\(\\\)
+
+Following from these results, Niwiński and Skrzypczak introduced [MFCS21] the guidability game, from which they deduce a decision procedure for guidability in 2EXP-time.
+
+The lower bound for this problem, however, remains open. We conjecture that it is at least in EXPTIME.

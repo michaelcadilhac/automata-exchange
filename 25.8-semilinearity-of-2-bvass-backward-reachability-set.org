@@ -1,0 +1,35 @@
+#+TITLE: 25.8 Semilinearity of 2-BVASS backward reachability set
+#+AUTHOR: Biziere Clotilde
+#+EMAIL: clotilde.biziere@u-bordeaux.fr
+#+DATE: <2025-07-05>
+#+LAYOUT: post
+#+TAGS: VASS, semilinear sets
+
+A \(d\)-dimensional Vector Addition System with States (VASS) is a finite automaton \(V = (Q, \Delta)\) with transitions labeled by integer vectors: \(\Delta \subseteq Q \times \mathbb{Z}^d \times Q\). Its set of configurations is \(Q \times \mathbb{N}^d\). An execution of \(V\) is a sequence of configurations
+\[
+(q_0, \vec x_0) \to (q_1, \vec x_1) \to \cdots \to (q_n, \vec x_n)
+\]
+such that for each \(i < n\), there exists a transition \((q_i, \vec v_i, q_{i+1}) \in \Delta\) satisfying \(\vec x_{i+1} = \vec x_i + \vec v_i \in \mathbb{N}^d\).
+
+The reachability relation \(R_V \subseteq (Q \times \mathbb{N}^d) \times (Q \times \mathbb{N}^d)\) is the set of pairs of configurations connected by an execution. The reachability set of \(V\) from an initial configuration \((q_{\text{init}}, \vec x_{\text{init}})\) is
+\[
+\{ (q, \vec x) \mid ((q_{\text{init}}, \vec x_{\text{init}}), (q, \vec x)) \in R_V \},
+\]
+and the backward reachability set from a final configuration \((q_{\text{final}}, \vec x_{\text{final}})\) is
+\[
+\{ (q, \vec x) \mid ((q, \vec x), (q_{\text{final}}, \vec x_{\text{final}})) \in R_V \}.
+\]
+
+A Branching VASS (BVASS) \(B = (Q, \Delta_1, \Delta_2)\) is a VASS \((Q, \Delta_1)\) extended with a second kind of transitions, called branching transitions, encoded as triples of states \((p, q, r) \in \Delta_2\). Executions of \(B\) are finite trees labeled by configurations, constructed bottom-up. All leaves are labeled by the same initial configuration, and every internal node is obtained either from a single child by applying a VASS transition from \(\Delta_1\), or from two children via a branching transition. In the latter case, there exists \((p, q, r) \in \Delta_2\) such that the children are in control states \(p\) and \(q\), the parent is in state \(r\), and the vector of the parent is the sum of the vectors of the two children. The final configuration of this run is the configuration of the root. The reachability relation and reachability sets are defined analogously to the case of VASS.\(\\\)
+
+A semilinear set (of \(\mathbb{N}^d\)) is a finite union of sets of the form \(\vec a + \mathbb{N} \vec b_1 + \cdots + \mathbb{N} \vec b_k\), where \(\vec a, \vec b_1, \dots, \vec b_k \in \mathbb{N}^d\).
+
+In 1979, Hopcroft and Pansiot proved that two-dimensional VASS have computable semilinear reachability sets. (Semilinearity of backward reachability sets follows immediately, since VASS can be reversed.) They also give an example of three-dimensional VASS with a non-semilinear reachability set.\(\\\)
+
+In 2004, Leroux and Sutre proved a stronger result for two-dimensional VASS: their reachability relation is semilinear. (https://link.springer.com/chapter/10.1007/978-3-540-28644-8_26)\(\\\)
+
+
+In a paper to appear at MFCS'25 (available on arxiv at this address https://arxiv.org/pdf/2506.22561), Bizière, Hilaire, Leroux and Sutre extended the result of Hopcroft and Pansiot to BVASS: they proved that two-dimensional branching VASS have computable semilinear reachability sets. However, it is easily seen that the result of Leroux and Sutre doesn't generalise: the divisibility relation, which is not semilinear, can be obtained as the reachability relation of a trivial one-dimensional BVASS.\(\\\)
+
+A natural question that remains is whether the backward reachability sets of a two-dimensional BVASS are also semilinear. It is not too difficult to show that they are semilinear in dimension 1.
+

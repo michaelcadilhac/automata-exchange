@@ -1,0 +1,23 @@
+#+TITLE: 25.16 Normal-closure-equivalence of RAAG- and counter-automata
+#+AUTHOR: Leon Pernak
+#+EMAIL: pernak@math.uni-sb.de
+#+DATE: <2025-07-04>
+#+LAYOUT: post
+#+TAGS: graph groups, raags, counter, normal closure, groups, Z-VASS
+
+A RAAG (right-angled Artin group) or graph group is defined by a finite undirected graph \((V,E)\) as follows: The resulting group has a generator \(x_v\) for every vertex \(v \in V\). Whenever two vertices are connected by an edge, then the respective generators are defined to commute. In other words, the group has the presentation
+\(\langle x_v \mid x_vx_w=x_wx_v, (v,w) \in E\rangle.\)
+By \(G\)-VASS I mean a finite automaton with an additional "counter" with values in \(G\). On each transition the automaton can add a value to the counter, but the counter cannot be accessed; only when the automaton reaches an accepting state and the counter has value \(0\) (trivial element of \(G\)), the input word is accepted. \(\\\)
+
+The normal closure of a language \(L\) is its closure under concatenation and cyclic rotation. Two languages are nc-equivalent if they have the same normal closure.\[\\\]
+
+I know: If the graph of \(G\) is not a transitive forest (equivalently: contains a cycle of length \(4\) or a line of length at least \(4\) as induced subgraph), then the class of \(G\)-VASS languages is the class of recursive languages.\(\\\)
+
+Furthermore, for any \(F_2 \times \mathbb{Z}^d\)-VASS \(\mathcal{A}\) there exists a \(\mathbb{Z}^n\)-VASS \(\mathcal{A}'\) for some \(n\) such that \(\mathcal{L}(\mathcal{A})\) and \(\mathcal{L}(\mathcal{A}')\) are nc-equivalent.\[\\\]
+
+Question: Does this extend to \(G\)-VASS for \(G\) being defined by a transitive forest, i.e. is every such \(G\)-VASS language nc-equivalent to a \(\mathbb{Z}^n\)-VASS language?\[\\\]
+
+A language is \(k\)-context-free if it is the intersection of \(k\) context-free languages. A language is poly-context-free if it is \(k\)-context-free for some \(k\). \[\\\]
+
+Question: What is the relation between poly-context-free languages and \(\mathbb{Z}^n\)-VASS or \(G\)-VASS languages for RAAGs \(G\)? What is their nc-equivalence status?
+

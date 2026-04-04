@@ -1,0 +1,9 @@
+#+TITLE: 25.29 Left quotient operator on regular expressions
+#+AUTHOR: Ekaterina Zhuchko
+#+EMAIL: ekzhuc@taltech.ee
+#+DATE: <2025-07-14>
+#+LAYOUT: post
+#+TAGS: automata, left quotients
+
+Given two regular languages \(L_1\) and \(L_2\), we can define the left language quotient operations as \(L_2\backslash_lL_1 := \{ v \ \vert \ \exists u, uv \in L_1 \land u \in L_2 \}\). The Brzozowski derivative is a special case of the left quotient by a singleton language: \(\{c\}\backslash_lL_1 := \{ v \ \vert \ cv \in L_1 \}\).\[\\\]
+This leads to the following question: is there a purely inductive definition of the left quotient operation on regular expressions? i.e. a function \(f : RE \times RE \to RE\) s.t. \(\mathcal{L}(f(R_2,R_1))=\mathcal{L}(R_2)\backslash_l\mathcal{L}(R_1)\).

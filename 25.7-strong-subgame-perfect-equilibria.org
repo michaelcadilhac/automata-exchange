@@ -1,0 +1,14 @@
+#+TITLE: 25.7 Strong subgame perfect equilibria
+#+AUTHOR: Satya Prakash Nayak
+#+EMAIL: sanayak@mpi-sws.org
+#+DATE: <2025-06-12>
+#+LAYOUT: post
+#+TAGS: games, equilibria
+
+A \(k\)-player (turn-based) game is given by a directed graph \(G = (V, E)\) with each vertex owned by one of the \(k\) players, and an objective \(W_i \subseteq V^\omega\) for each player \(i\). A strategy profile \(\bar{\sigma} = (\sigma_1, \ldots, \sigma_k)\) is a tuple of strategies, one for each player. A strategy profile is Nash equilibrium (NE) if no player can benefit by unilaterally changing their strategy, i.e., if \(\bar{\sigma}\) produces a losing outcome for player \(i\), then Player \(i\) cannot deviate to a different strategy \(\sigma_i'\) that would produce a winning outcome. A strategy profile is a subgame perfect equilibrium (SPE) if it is an NE in every possible subgame of the original game. It is well-known that SPE is a more appropriate notion in this setting and well-studied for \(k\)-player games with \(\omega\)-regular objectives.\(\\\)
+
+A more robust notion of NE is strong Nash equilibrium (SNE), where no coalition of players can cooperatively deviate in a way that strictly benefits all of its members. Based on SNE, we consider the notion of strong subgame perfect equilibrium (SSPE), which is a strategy profile that is SNE in every subgame.\(\\\)
+
+Question:\(\\\)
+1. Does it always exists an SSPE in \(k\)-player games with \(\omega\)-regular objectives?\(\\\)
+2. If yes, can we compute a maximal SSPE?
