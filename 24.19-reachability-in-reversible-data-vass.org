@@ -17,5 +17,4 @@ an automorphism of A.
 Examples: Dense linear order, random/Rado graph.
 
 This question comes from the following paper with Sławomir Lasota:
-[arxiv:2402.17604] (arxiv)
-[doi:10.1145/3661814.3662074] (LICS'24 proceedings link).
+[[https://arxiv.org/abs/2402.17604][arXiv]] - [[doi:10.1145/3661814.3662074][LICS'24 proceedings link]]
