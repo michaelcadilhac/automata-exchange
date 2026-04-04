@@ -1,7 +1,7 @@
 #+TITLE: 25.2 Permissive strategies for reachability games
 #+AUTHOR: B. Srivathsan
 #+EMAIL: sri@cmi.ac.in
-#+DATE: <2025-07-20>
+#+DATE: <2025-07-01 01:12:00>
 #+LAYOUT: post
 #+TAGS: games on graphs
 

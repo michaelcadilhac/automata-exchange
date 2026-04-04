@@ -1,7 +1,7 @@
 #+TITLE: 22.3 Universal coverability for Orthant VAS
 #+AUTHOR: David Purser
 #+EMAIL: d.purser@uw.edu.pl
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:13:00>
 #+LAYOUT: post
 #+TAGS: VASS, reachability
 

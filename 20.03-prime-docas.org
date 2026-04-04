@@ -1,7 +1,7 @@
 #+TITLE: 20.3 Prime DOCAs
 #+AUTHOR: Patrick Totzke
 #+EMAIL: totzke@liverpool.ac.uk
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:13:00>
 #+LAYOUT: post
 #+TAGS: pushdown automata, counter machines
 

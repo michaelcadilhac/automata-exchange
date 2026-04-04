@@ -1,7 +1,7 @@
 #+TITLE: 24.11 Membership of a coverability VASS in FO2
 #+AUTHOR: Vincent Michielini
 #+EMAIL: michielini@mimuw.edu.pl
-#+DATE: 2024-07-05
+#+DATE: <2024-07-01 01:21:00>
 #+TAGS: VASS, first-order logic, two variables, peacewise-testable languages
 
 A VASS of dimension \(d\) is an automaton where the transitions from states to

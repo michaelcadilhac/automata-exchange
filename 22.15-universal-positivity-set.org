@@ -1,7 +1,7 @@
 #+TITLE: 22.15 Universal Positivity Set
 #+AUTHOR: Edon Kelmendi
 #+EMAIL: edon.kelmendi@gmail.com
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:24:00>
 #+LAYOUT: post
 #+TAGS: Skolem problem
 

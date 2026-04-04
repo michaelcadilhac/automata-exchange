@@ -1,7 +1,7 @@
 #+TITLE: 22.10 The Parity Language
 #+AUTHOR: Corentin Barloy
 #+EMAIL: corentin.barloy@inria.fr
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:20:00>
 #+LAYOUT: post
 #+TAGS: logic, circuits
 

@@ -1,7 +1,7 @@
 #+TITLE: 22.8 From two-way to one-way transducers, revisited
 #+AUTHOR: Nguyễn Lê Thành Dũng
 #+EMAIL: nltd@nguyentito.eu
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:18:00>
 #+LAYOUT: post
 #+TAGS: transducers
 

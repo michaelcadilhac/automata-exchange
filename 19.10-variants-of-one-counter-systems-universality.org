@@ -1,7 +1,7 @@
 #+TITLE: 19.10 Variants of one-counter systems universality
 #+AUTHOR: Patrick Totzke
 #+EMAIL: totzke@liverpool.ac.uk
-#+DATE: <2019-07-18 19:10>
+#+DATE: <2019-07-01 01:19:00>
 #+LAYOUT: post
 #+TAGS: counter machines, VASS, pushdown automata
 

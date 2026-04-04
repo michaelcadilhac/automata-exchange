@@ -1,7 +1,7 @@
 #+TITLE: 22.19 Membership in Reversed Partially-Ordered Automata
 #+AUTHOR: Michaël Cadilhac
 #+EMAIL: michael@cadilhac.name
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:28:00>
 #+LAYOUT: post
 #+TAGS: algebra, automata
 

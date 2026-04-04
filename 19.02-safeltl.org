@@ -1,7 +1,7 @@
 #+TITLE: 19.2 SafeLTL
 #+AUTHOR: Karoliina Lehtinen
 #+EMAIL: K.Lehtinen@liverpool.ac.uk
-#+DATE: <2019-07-18 19:02>
+#+DATE: <2019-07-01 01:12:00>
 #+LAYOUT: post
 #+TAGS: logic, temporal logic, infinite words
 

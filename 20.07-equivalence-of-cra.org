@@ -1,7 +1,7 @@
 #+TITLE: 20.7 Equivalence of Cost Register Automata: the quest for decidability
 #+AUTHOR: Michaël Cadilhac
 #+EMAIL: michael@cadilhac.name
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:17:00>
 #+LAYOUT: post
 #+TAGS: cost register automata
 

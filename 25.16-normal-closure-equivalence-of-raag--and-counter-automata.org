@@ -1,7 +1,7 @@
 #+TITLE: 25.16 Normal-closure-equivalence of RAAG- and counter-automata
 #+AUTHOR: Leon Pernak
 #+EMAIL: pernak@math.uni-sb.de
-#+DATE: <2025-07-04>
+#+DATE: <2025-07-01 01:26:00>
 #+LAYOUT: post
 #+TAGS: graph groups, raags, counter, normal closure, groups, Z-VASS
 
@@ -10,6 +10,8 @@ A RAAG (right-angled Artin group) or graph group is defined by a finite undirect
 By \(G\)-VASS I mean a finite automaton with an additional "counter" with values in \(G\). On each transition the automaton can add a value to the counter, but the counter cannot be accessed; only when the automaton reaches an accepting state and the counter has value \(0\) (trivial element of \(G\)), the input word is accepted. \(\\\)
 
 The normal closure of a language \(L\) is its closure under concatenation and cyclic rotation. Two languages are nc-equivalent if they have the same normal closure.\[\\\]
+
+{{{teaser_end}}}
 
 I know: If the graph of \(G\) is not a transitive forest (equivalently: contains a cycle of length \(4\) or a line of length at least \(4\) as induced subgraph), then the class of \(G\)-VASS languages is the class of recursive languages.\(\\\)
 

@@ -1,7 +1,7 @@
 #+TITLE: 23.2 $o(n^2)$-time algorithm for coverability in 1-VASS
 #+AUTHOR: Henry Sinclair-Banks
 #+EMAIL: h.sinclair-banks@warwick.ac.uk
-#+DATE: <2023-07-25>
+#+DATE: <2023-07-01 01:12:00>
 #+LAYOUT: post
 #+TAGS: coverability, vass
 

@@ -1,7 +1,7 @@
 #+TITLE: 24.18 Lower bounds for determinizability of weighted automata over \(\mathbb Q\)
 #+AUTHOR: Nathan Lhote
 #+EMAIL: nathan.lhote@lis-lab.fr
-#+DATE: <2024-07-13>
+#+DATE: <2024-07-01 01:28:00>
 #+LAYOUT: post
 #+TAGS: weighted automata
 

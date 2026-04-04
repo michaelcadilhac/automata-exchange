@@ -1,7 +1,7 @@
 #+TITLE: 19.15 The busy beaver problem for population protocols
 #+AUTHOR: Javier Esparza
 #+EMAIL: esparza@in.tum.de
-#+DATE: <2019-07-18 19:15>
+#+DATE: <2019-07-01 01:24:00>
 #+LAYOUT: post
 #+TAGS: population protocols
 

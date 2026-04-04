@@ -1,7 +1,7 @@
 #+TITLE: 24.6 Emptiness-checking for 3-clock Timed Automata with additive constraints
 #+AUTHOR: R. Govind
 #+EMAIL: govind.rajanbabu@it.uu.se
-#+DATE: <2024-07-05>
+#+DATE: <2024-07-01 01:16:00>
 #+LAYOUT: post
 #+TAGS: timed automata, emptiness checking
 

@@ -1,7 +1,7 @@
 #+TITLE: 24.5 Properties of the value function in weighted timed games
 #+AUTHOR: Julie Parreaux
 #+EMAIL: j.parreaux@uw.edu.pl
-#+DATE: <2024-07-04>
+#+DATE: <2024-07-01 01:15:00>
 #+LAYOUT: post
 #+TAGS: timed automata, game, continuity, fixpoint
 

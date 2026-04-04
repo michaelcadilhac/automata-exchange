@@ -1,7 +1,7 @@
 #+TITLE: 20.2 Deterministic separability of nondeterministic timed languages
 #+AUTHOR: Lorenzo Clemente
 #+EMAIL: clementelorenzo@gmail.com
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:12:00>
 #+LAYOUT: post
 #+TAGS: separation, timed automata
 

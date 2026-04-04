@@ -1,7 +1,7 @@
 #+TITLE: 24.10 Functions Weakly-Computable by Vector Addition Systems
 #+AUTHOR: Roland Guttenberg
 #+EMAIL: guttenbe@in.tum.de
-#+DATE: <07-05-2024>
+#+DATE: <2024-07-01 01:20:00>
 #+TAGS: vass
  
 A vector addition system with states (VASS) is a finite graph \((Q,E)\) with

@@ -1,7 +1,7 @@
 #+TITLE: 24.2 Positional Nash Equilibria
 #+AUTHOR: Antonio Casares
 #+EMAIL: antoniocasares@mimuw.edu.pl
-#+DATE: <2024-06-27>
+#+DATE: <2024-07-01 01:12:00>
 #+TAGS: positionality, parity games, Nash equilibria
 #+LAYOUT: post
 

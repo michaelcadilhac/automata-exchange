@@ -1,7 +1,7 @@
 #+TITLE: 25.3 Relative degree for rational series
 #+AUTHOR: Lorenzo Clemente
 #+EMAIL: clementelorenzo@gmail.com
-#+DATE: <2025-07-07>
+#+DATE: <2025-07-01 01:13:00>
 #+LAYOUT: post
 #+TAGS: algebra, automata, control theory
 

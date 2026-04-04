@@ -1,7 +1,7 @@
 #+TITLE: 22.9 Constructive Zermelo's Problem
 #+AUTHOR: Vincent Michielini
 #+EMAIL: vincent.michielini@uni.opole.pl
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:19:00>
 #+LAYOUT: post
 #+TAGS: logic
 

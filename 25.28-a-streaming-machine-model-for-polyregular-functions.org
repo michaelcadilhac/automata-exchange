@@ -1,7 +1,7 @@
 #+TITLE: 25.28 A Streaming Machine Model for Polyregular Functions
 #+AUTHOR: S. Krishna
 #+EMAIL: krishnas@cse.iitb.ac.in
-#+DATE: <2025-07-14>
+#+DATE: <2025-07-01 01:38:00>
 #+LAYOUT: post
 #+TAGS: automata, transducers
 
@@ -10,6 +10,7 @@ polynomial in the lengths of the input, unlike regular, rational and sequential 
 by deterministic two-way transducers.  There is an attractive, one-way machine for regular functions, namely,  deterministic "copyless" streaming string transducers (SST). Like two-way transducers,
 SSTs are closed under composition.
 
+{{{teaser_end}}}
 
 \[ \]
 

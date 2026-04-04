@@ -1,7 +1,7 @@
 #+TITLE: 25.25 Do probabilities matter for resolving nondeterminism?
 #+AUTHOR: K. S. Thejaswini
 #+EMAIL: thejaswini.k.s@ista.ac.at
-#+DATE: <2025-07-08>
+#+DATE: <2025-07-01 01:35:00>
 #+LAYOUT: post
 #+TAGS: automata, probabilities
 
@@ -19,6 +19,8 @@ We say that a probabilistic automaton \(P\) is obtained from a memoryless resolv
 is replaced by a probability distribution \(D_s^a\) over that set. The resulting probabilistic automaton \(P\) retains the same state set \(Q\), alphabet \(\Sigma\), and initial state \(q_0\), but transitions are decided by the probability distributions \(
 \{ D_s^a \}_{s \in Q, a \in \Sigma},
 \) which define the probability of moving from state \(s\) to state \(t\) upon reading symbol \(a\).\(\\\)
+
+{{{teaser_end}}}
 
 We say that \(A\) is memoryless stochastically resolvable if there exists a probabilistic automaton \(P\), obtained from a memoryless resolver as described above, such that for every infinite word \(w \in \Sigma^\omega\) accepted by \(A\), the probabilistic automaton \(P\) also accepts \(w\) with probability 1.
 

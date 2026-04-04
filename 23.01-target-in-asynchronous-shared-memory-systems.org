@@ -1,7 +1,7 @@
 #+TITLE: 23.1 TARGET in asynchronous shared-memory systems
 #+AUTHOR: Nicolas Waldburger
 #+EMAIL: nicolas.waldburger@irisa.fr
-#+DATE: <2023-09-16>
+#+DATE: <2023-07-01 01:11:00>
 #+LAYOUT: post
 #+TAGS: verification, automata, parameterized verification
 

@@ -1,7 +1,7 @@
 #+TITLE: 19.14 Continuous reachability in ordered data VAS
 #+AUTHOR: Piotrek Hofman
 #+EMAIL: piotrek.hofman@gmail.com
-#+DATE: <2019-07-18 19:14>
+#+DATE: <2019-07-01 01:23:00>
 #+LAYOUT: post
 #+TAGS: VASS, reachability
 

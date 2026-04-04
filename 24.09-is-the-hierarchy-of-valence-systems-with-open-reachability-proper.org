@@ -1,7 +1,7 @@
 #+TITLE: 24.9 Is the Hierarchy of Valence Systems with Open Reachability Proper?
 #+AUTHOR: Lia Schütze
 #+EMAIL: lschuetze@mpi-sws.org
-#+DATE: <2024-07-05>
+#+DATE: <2024-07-01 01:19:00>
 #+LAYOUT: post
 #+TAGS: automata, languages, valence systems, vass, pvass, pushdown
 

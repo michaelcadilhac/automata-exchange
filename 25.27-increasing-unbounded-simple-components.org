@@ -1,7 +1,7 @@
 #+TITLE: 25.27 Increasing-unbounded Simple Components
 #+AUTHOR: Michal Ajdarow
 #+EMAIL: xajdarow@mail.muni.cz
-#+DATE: <2025-07-05>
+#+DATE: <2025-07-01 01:37:00>
 #+LAYOUT: post
 #+TAGS: MDP, VASS
 
@@ -34,6 +34,8 @@ Given a OC-MDP \(M\), what is the complexity of deciding whether \(M\)
 contains an increasing-unbounded simple component?
 What is the complexity of this problem for the subclass of OC-MDPs that contain
 no decreasing simple components?
+
+{{{teaser_end}}}
 
 These are trivially in NP, but can they be solved in PTIME?
 

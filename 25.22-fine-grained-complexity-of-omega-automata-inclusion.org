@@ -1,7 +1,7 @@
 #+TITLE: 25.22 Fine-grained complexity of omega-automata inclusion
 #+AUTHOR: Antonio Casares
 #+EMAIL: antoniocasaressantos@gmail.com
-#+DATE: <2025-06-19>
+#+DATE: <2025-07-01 01:32:00>
 #+LAYOUT: post
 #+TAGS: polynomial-time, parity automata, ETH
 

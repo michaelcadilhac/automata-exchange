@@ -1,7 +1,7 @@
 #+TITLE: 24.4 Language Equivalence between Nondeterministic and Deterministic One-Counter Machines 
 #+AUTHOR: Aditya Prakash
 #+EMAIL: aditya.prakash@warwick.ac.uk
-#+DATE: <2024-07-02>
+#+DATE: <2024-07-01 01:14:00>
 #+LAYOUT: post
 #+TAGS: counter machines
 

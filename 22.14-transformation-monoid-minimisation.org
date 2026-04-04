@@ -1,7 +1,7 @@
 #+TITLE: 22.14 Transformation monoid minimisation
 #+AUTHOR: Ismaël Jecker
 #+EMAIL: ismael.jecker@gmail.com
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:23:00>
 #+LAYOUT: post
 #+TAGS: automata, algebra
 

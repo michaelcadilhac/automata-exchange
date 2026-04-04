@@ -1,7 +1,7 @@
 #+TITLE: 22.4 Reconfigurable broadcast networks (RBN)
 #+AUTHOR: Chana Weil-Kennedy
 #+EMAIL: chana.weilkennedy@in.tum.de
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:14:00>
 #+LAYOUT: post
 #+TAGS: networks
 

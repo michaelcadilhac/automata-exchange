@@ -1,7 +1,7 @@
 #+TITLE: 24.15 Games under delays and loss
 #+AUTHOR: Ashwani Anand
 #+EMAIL: ashwani@mpi-sws.org
-#+DATE: <2024-07-11>
+#+DATE: <2024-07-01 01:25:00>
 #+LAYOUT: post
 #+TAGS: Games on graphs
 

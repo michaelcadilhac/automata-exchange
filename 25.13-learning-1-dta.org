@@ -1,7 +1,7 @@
 #+TITLE: 25.13 Learning 1-DTA
 #+AUTHOR: Kyveli Doveri
 #+EMAIL: kdoveri@mimuw.edu.pl
-#+DATE: <2025-07-17>
+#+DATE: <2025-07-01 01:23:00>
 #+LAYOUT: post
 #+TAGS: automata
 

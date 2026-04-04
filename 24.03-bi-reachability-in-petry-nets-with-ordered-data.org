@@ -1,7 +1,7 @@
 #+TITLE: 24.3 Bi-reachability in Petri nets with ordered data
 #+AUTHOR: Łukasz Kamiński
 #+EMAIL: l.kaminski5@uw.edu.pl
-#+DATE: <2024-07-02>
+#+DATE: <2024-07-01 01:13:00>
 #+LAYOUT: post
 #+TAGS: Petri nets, Petri nets with data, bi-reachablility
 

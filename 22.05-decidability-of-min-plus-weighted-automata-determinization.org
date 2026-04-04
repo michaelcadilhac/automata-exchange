@@ -1,7 +1,7 @@
 #+TITLE: 22.5 Decidability of $(\min,+)$-weighted automata determinization
 #+AUTHOR: Shaull Almagor
 #+EMAIL: shaull@cs.technion.ac.il
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:15:00>
 #+LAYOUT: post
 #+TAGS: weighted automata
 

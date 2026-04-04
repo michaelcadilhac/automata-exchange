@@ -1,7 +1,7 @@
 #+TITLE: 20.4 Populations of Markov decision processes, what we know and an open question 
 #+AUTHOR: Nathanaël Fijalkow
 #+EMAIL: nathanael.fijalkow@labri.fr
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:14:00>
 #+LAYOUT: post
 #+TAGS: games, markov decision processes
 

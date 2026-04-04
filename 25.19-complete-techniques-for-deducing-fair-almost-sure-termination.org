@@ -1,7 +1,7 @@
 #+TITLE: 25.19 Complete techniques for deducing Fair Almost-Sure Termination
 #+AUTHOR: V.R. Sathiyanarayana
 #+EMAIL: sramesh@mpi-sws.org
-#+DATE: <2025-07-03>
+#+DATE: <2025-07-01 01:29:00>
 #+LAYOUT: post
 #+TAGS: probabilistic programs, proof rules, termination
 

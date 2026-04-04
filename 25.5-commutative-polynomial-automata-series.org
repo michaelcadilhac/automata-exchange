@@ -1,7 +1,7 @@
 #+TITLE: 25.5 Commutative polynomial automata series
 #+AUTHOR: Lorenzo Clemente
 #+EMAIL: clementelorenzo@gmail.com
-#+DATE: <2025-07-07>
+#+DATE: <2025-07-01 01:15:00>
 #+LAYOUT: post
 #+TAGS: algebra, automata, formal series
 

@@ -1,7 +1,7 @@
 #+TITLE: 25.26 Memory requirements of subgame perfect equilibria in reachability games
 #+AUTHOR: James C. A. Main
 #+EMAIL: james.main@umons.ac.be
-#+DATE: <2025-07-04>
+#+DATE: <2025-07-01 01:36:00>
 #+LAYOUT: post
 #+TAGS: games
 

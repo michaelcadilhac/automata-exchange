@@ -1,7 +1,7 @@
 #+TITLE: 20.10 Tighten the complexity of solving random-turn games
 #+AUTHOR: Guy Avni
 #+EMAIL: gavni@cs.haifa.ac.il
-#+DATE: <2020-11-03 Tue>
+#+DATE: <2020-07-01 01:20:00>
 #+LAYOUT: post
 #+TAGS: games, complexity
 

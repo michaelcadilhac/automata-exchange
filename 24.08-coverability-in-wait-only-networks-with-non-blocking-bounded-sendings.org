@@ -1,7 +1,7 @@
 #+TITLE: 24.8 Coverability in Wait-Only Networks with non-blocking bounded sendings
 #+AUTHOR: Lucie Guillou
 #+EMAIL: guillou@irif.fr
-#+DATE: <2024-07-05>
+#+DATE: <2024-07-01 01:18:00>
 #+LAYOUT: post
 #+TAGS: distributed networks, coverability
 

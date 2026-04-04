@@ -1,7 +1,7 @@
 #+TITLE: 25.17 Tree automata with constraints on infinite trees
 #+AUTHOR: Leon Pernak
 #+EMAIL: pernak@math.uni-sb.de
-#+DATE: <2025-07-04>
+#+DATE: <2025-07-01 01:27:00>
 #+LAYOUT: post
 #+TAGS: tree automata, infinite tree, relation, constraint
 

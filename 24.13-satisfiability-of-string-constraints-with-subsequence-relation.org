@@ -1,7 +1,7 @@
 #+TITLE: 24.13 Satisfiability of String Constraints with Subsequence relation
 #+AUTHOR: C. Aiswarya
 #+EMAIL: aiswarya@cmi.ac.in
-#+DATE: <2024-07-05>
+#+DATE: <2024-07-01 01:23:00>
 #+LAYOUT: post
 #+TAGS: string constraints
 

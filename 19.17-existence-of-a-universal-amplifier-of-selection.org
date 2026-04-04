@@ -1,7 +1,7 @@
 #+TITLE: 19.17 Existence of a universal amplifier of selection
 #+AUTHOR: Ismaël Jecker
 #+EMAIL: ismael.jecker@gmail.com
-#+DATE: <2019-07-18 19:17>
+#+DATE: <2019-07-01 01:26:00>
 #+LAYOUT: post
 #+TAGS: stochastic processes
 

@@ -1,7 +1,7 @@
 #+TITLE: 19.1 Deciding upperboundedness of \(\bbZ\)-CCRA
 #+AUTHOR: Michaël Cadilhac
 #+EMAIL: michael@cadilhac.name
-#+DATE: <2019-07-18 19:01>
+#+DATE: <2019-07-01 01:11:00>
 #+LAYOUT: post
 #+TAGS: cost register automata, counter machines, weighted automata
 

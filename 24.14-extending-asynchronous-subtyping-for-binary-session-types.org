@@ -1,7 +1,7 @@
 #+TITLE: 24.14 Extending asynchronous subtyping for binary session types
 #+AUTHOR: Amrita Suresh
 #+EMAIL: amrita.suresh@cs.ox.ac.uk
-#+DATE: <2024-07-05>
+#+DATE: <2024-07-01 01:24:00>
 #+LAYOUT: post
 #+TAGS: communicating automata, channels, subtyping, session types
 

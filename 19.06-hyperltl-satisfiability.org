@@ -1,7 +1,7 @@
 #+TITLE: 19.6 HyperLTL satisfiability
 #+AUTHOR: Corto Mascle
 #+EMAIL: corto.mascle@ens-paris-saclay.fr
-#+DATE: <2019-07-18 19:06>
+#+DATE: <2019-07-01 01:16:00>
 #+LAYOUT: post
 #+TAGS: logic, temporal logic
 

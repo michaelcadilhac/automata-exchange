@@ -1,7 +1,7 @@
 #+TITLE: 19.13 Does a $(\textsf{min,+})$-WA preserve REG by inverse image?
 #+AUTHOR: Nathan Lhote
 #+EMAIL: nlhote@mimuw.edu.pl
-#+DATE: <2019-07-18 19:13>
+#+DATE: <2019-07-01 01:22:00>
 #+LAYOUT: post
 #+TAGS: weighted automata, continuity
 

@@ -1,7 +1,7 @@
 #+TITLE: 25.14 Complexity of Explorability games on temporal graphs
 #+AUTHOR: Sougata Bose
 #+EMAIL: sougata.bose@umons.ac.be
-#+DATE: <2025-07-07>
+#+DATE: <2025-07-01 01:24:00>
 #+LAYOUT: post
 #+TAGS: games on graphs, temporal graphs
 

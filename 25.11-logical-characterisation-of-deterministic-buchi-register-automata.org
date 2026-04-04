@@ -1,7 +1,7 @@
 #+TITLE: 25.11 Logical Characterisation of Deterministic Büchi Register Automata
 #+AUTHOR: Mrudula Balachander
 #+EMAIL: mrudula.balachander@ulb.be
-#+DATE: <2025-07-07>
+#+DATE: <2025-07-01 01:21:00>
 #+LAYOUT: post
 #+TAGS: automata, logic, synthesis, infinite alphabets
 
@@ -10,6 +10,8 @@ Deterministic Büchi register automata (DBRA) over infinite alphabets with equal
 Open Problem:\(\\\)
 
 Is there a temporal logic (or suitable logical fragment) that exactly characterises, or at least translates effectively into, deterministic Büchi register automata (DBRA) over infinite alphabets with equality tests?\(\\\)
+
+{{{teaser_end}}}
 
 [1] Exibard, Léo, Emmanuel Filiot, and Pierre-Alain Reynier. "Synthesis of data word transducers." Logical Methods in Computer Science 17 (2021).\(\\\)
 [2] Demri, Stéphane, and Karin Quaas. "Constraint automata on infinite data trees: from CTL (Z)/CTL*(Z) to decision procedures." Logical Methods in Computer Science 21 (2025).\(\\\)

@@ -1,7 +1,7 @@
 #+TITLE: 25.8 Semilinearity of 2-BVASS backward reachability set
 #+AUTHOR: Biziere Clotilde
 #+EMAIL: clotilde.biziere@u-bordeaux.fr
-#+DATE: <2025-07-05>
+#+DATE: <2025-07-01 01:18:00>
 #+LAYOUT: post
 #+TAGS: VASS, semilinear sets
 
@@ -21,6 +21,8 @@ and the backward reachability set from a final configuration \((q_{\text{final}}
 \]
 
 A Branching VASS (BVASS) \(B = (Q, \Delta_1, \Delta_2)\) is a VASS \((Q, \Delta_1)\) extended with a second kind of transitions, called branching transitions, encoded as triples of states \((p, q, r) \in \Delta_2\). Executions of \(B\) are finite trees labeled by configurations, constructed bottom-up. All leaves are labeled by the same initial configuration, and every internal node is obtained either from a single child by applying a VASS transition from \(\Delta_1\), or from two children via a branching transition. In the latter case, there exists \((p, q, r) \in \Delta_2\) such that the children are in control states \(p\) and \(q\), the parent is in state \(r\), and the vector of the parent is the sum of the vectors of the two children. The final configuration of this run is the configuration of the root. The reachability relation and reachability sets are defined analogously to the case of VASS.\(\\\)
+
+{{{teaser_end}}}
 
 A semilinear set (of \(\mathbb{N}^d\)) is a finite union of sets of the form \(\vec a + \mathbb{N} \vec b_1 + \cdots + \mathbb{N} \vec b_k\), where \(\vec a, \vec b_1, \dots, \vec b_k \in \mathbb{N}^d\).
 

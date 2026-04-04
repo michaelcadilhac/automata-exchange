@@ -1,7 +1,7 @@
 #+TITLE: 25.1 Complexity of generalised reachability games with target sets of size 2
 #+AUTHOR: Sarah Winter
 #+EMAIL: sarah.winter@irif.fr
-#+DATE: <2025-07-14>
+#+DATE: <2025-07-01 01:11:00>
 #+LAYOUT: post
 #+TAGS: games on graphs
 

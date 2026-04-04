@@ -1,30 +1,38 @@
 #+TITLE: 25.20 On an equivalence between finitely many tokens and one invisible token
 #+AUTHOR: Aditya Prakash
 #+EMAIL: aditya.prakash@lis-lab.fr
-#+DATE: <2025-07-11>
+#+DATE: <2025-07-01 01:30:00>
 #+LAYOUT: post
 #+TAGS: automata over infinite words, games
 
-<p>
-Consider a safety automaton \(A\), i.e., an automaton over infinite words where all but one rejecting sink state is accepting. For simplicity, we assume that \(A\) has a single initial state. We will describe two game-based conditions for \(A\), which we conjecture to be equivalent. Both of these games involve a letter-picking adversary Letitia and a transition-picking protagonist Terence.
-</p>
-<b>Condition 1. Explorability</b>
-<p>
-For every positive natural number \(k\), the <b>\(k\)-explorability game</b> of \(A\) proceeds in infinitely many rounds and involves \(k\) distinguishable tokens, which are all initially placed at the initial state of \(A\). In round \(i\) of the \(k\)-explorability game, where each of the \(k\) tokens are each at some state of \(A\), the following sequence of moves are played. </p>
-<ul>
-<li>
- Letitia selects a letter \(a\) </li>
-<li> For each token, Terence selects an outgoing transition on \(a\) from the current state of that token, and then moves that token to the tail of that transition.</li>
-<li> The game then proceeds to round \((i+1)\).
-</ul>
+Consider a safety automaton \(A\), i.e., an automaton over infinite
+words where all but one rejecting sink state is accepting. For
+simplicity, we assume that \(A\) has a single initial state. We will
+describe two game-based conditions for \(A\), which we conjecture to
+be equivalent. Both of these games involve a letter-picking adversary
+Letitia and a transition-picking protagonist Terence.
+
+*Condition 1. Explorability*
+
+For every positive natural number \(k\), the *\(k\)-explorability game* of \(A\) proceeds in infinitely many rounds and involves \(k\) distinguishable tokens, which are all initially placed at the initial state of \(A\). In round \(i\) of the \(k\)-explorability game, where each of the \(k\) tokens are each at some state of \(A\), the following sequence of moves are played. 
+
+- Letitia selects a letter \(a\) 
+- For each token, Terence selects an outgoing transition on \(a\) from the current state of that token, and then moves that token to the tail of that transition.
+- The game then proceeds to round \((i+1)\).
+
+{{{teaser_end}}}
 
 In the limit of an infinite play of this game, the sequence of letters played by Letitia forms a word \(w\) while the path traced by Terence's \(k\)-tokens trace \(k\) runs on \(w\). Terence wins if either \(w \notin L(A)\), or if at least one of his tokens traces an accepting run.
 
-<p> If Terence has a strategy to win the \(k\)-explorability game of \(A\) for some \(k\), then we say that \(A\) is  <b>explorable</b>.</p>
+If Terence has a strategy to win the \(k\)-explorability game of \(A\) for some \(k\), then we say that \(A\) is  *explorable.*
 
-<b> Condition 2. Positive stochastic resolvability <a href="#footnote-1">[1]</a></b>
-<p>
-The stochastic resolvability (SR) game of \(A\) is similar to the \(1\)-explorability game of \(A\), except that Letitia does not obtain information on where Terence's token is (and she also does not obtain information on the transitions that Terence picks). To maximise the chance of Terence winning, Terence's strategies are now stochastic. We say that \(A\) is <b> positively stochastically resolvable </b> if there is a \(\lambda>0\) and a strategy for Terence using which Terence wins the SR game on \(A\) with probability at least \(\lambda\).</p>
-<b> Conjecture. </b> \(A\) is explorable if and only if \(A\) is positively stochastically resolvable.
-<p> The above conjecture is also open for parity automata. </p>
-<p id="footnote-1">[1] Coming up with a more reasonable name is another open problem :p</p>
+*Condition 2. Positive stochastic resolvability[fn:1]*
+
+The stochastic resolvability (SR) game of \(A\) is similar to the \(1\)-explorability game of \(A\), except that Letitia does not obtain information on where Terence's token is (and she also does not obtain information on the transitions that Terence picks). To maximise the chance of Terence winning, Terence's strategies are now stochastic. We say that \(A\) is *positively stochastically resolvable* if there is a \(\lambda>0\) and a strategy for Terence using which Terence wins the SR game on \(A\) with probability at least \(\lambda\).
+*Conjecture.* \(A\) is explorable if and only if \(A\) is positively stochastically resolvable.
+
+The above conjecture is also open for parity automata.
+
+* Footnotes
+
+[fn:1] Coming up with a more reasonable name is another open problem :p

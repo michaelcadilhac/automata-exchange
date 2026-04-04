@@ -1,7 +1,7 @@
 #+TITLE: 19.11 Shortest runs in 3-D VASS
 #+AUTHOR: Wojciech Czerwiński
 #+EMAIL: wczerwin@mimuw.edu.pl
-#+DATE: <2019-07-18 19:11>
+#+DATE: <2019-07-01 01:20:00>
 #+LAYOUT: post
 #+TAGS: counter machines, VASS, reachability
 

@@ -1,7 +1,7 @@
 #+TITLE: 22.13 Büchi automata using graph neural networks
 #+AUTHOR: León Bohn
 #+EMAIL: bohn@lics.rwth-aachen.de
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:22:00>
 #+LAYOUT: post
 #+TAGS: neural networks, automata
 

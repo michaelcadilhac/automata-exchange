@@ -1,7 +1,7 @@
 #+TITLE: 22.12 3-decomposition Conjecture
 #+AUTHOR: Irene Heinrich
 #+EMAIL: heinrich@mathematik.tu-darmstadt.de
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:21:00>
 #+LAYOUT: post
 #+TAGS: graphs
 

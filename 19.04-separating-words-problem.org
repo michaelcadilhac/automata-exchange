@@ -1,7 +1,7 @@
 #+TITLE: 19.4 Separating words problem
 #+AUTHOR: Wojciech Czerwiński
 #+EMAIL: wczerwin@mimuw.edu.pl
-#+DATE: <2019-07-18 19:04>
+#+DATE: <2019-07-01 01:14:00>
 #+LAYOUT: post
 #+TAGS: automata, descriptional complexity, separation
 

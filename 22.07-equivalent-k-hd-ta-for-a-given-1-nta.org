@@ -1,7 +1,7 @@
 #+TITLE: 22.7 Equivalent k-HD-TA for a given 1-NTA
 #+AUTHOR: Sougata Bose
 #+EMAIL: sougata.bose@liverpool.ac.uk
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:17:00>
 #+LAYOUT: post
 #+TAGS: timed automata
 

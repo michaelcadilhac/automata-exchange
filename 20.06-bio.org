@@ -1,7 +1,7 @@
 #+TITLE: 20.6 Branching Immediate Observation nets
 #+AUTHOR: Chana Weil-Kennedy
 #+EMAIL: chana.weilkennedy@in.tum.de
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:16:00>
 #+LAYOUT: post
 #+TAGS: petri nets
 

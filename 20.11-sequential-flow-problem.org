@@ -1,7 +1,7 @@
 #+TITLE: 20.11 The sequential flow problem
 #+AUTHOR: Pierre Ohlmann
 #+EMAIL: ohlmann@irif.fr
-#+DATE: <2020-11-03 Tue>
+#+DATE: <2020-07-01 01:21:00>
 #+LAYOUT: post
 #+TAGS: population protocols, complexity
 

@@ -1,7 +1,7 @@
 #+TITLE: 19.3 Universality for unambiguous automata
 #+AUTHOR: Wojciech Czerwiński
 #+EMAIL: wczerwin@mimuw.edu.pl
-#+DATE: <2019-07-18 19:03>
+#+DATE: <2019-07-01 01:13:00>
 #+LAYOUT: post
 #+TAGS: automata, complexity
 

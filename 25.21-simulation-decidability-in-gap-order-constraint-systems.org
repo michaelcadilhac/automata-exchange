@@ -1,7 +1,7 @@
 #+TITLE: 25.21 Simulation decidability in Gap-order Constraint Systems
 #+AUTHOR: Isa Vialard
 #+EMAIL: vialard@mpi-sws.org
-#+DATE: <2025-07-06>
+#+DATE: <2025-07-01 01:31:00>
 #+LAYOUT: post
 #+TAGS: simulation, infinite-state systems, well-quasi-order
 
@@ -13,6 +13,8 @@ Input: Two transition systems, one belonging to player Spoiler, the other to pla
 Each time Spoiler makes a move on her GCS, Duplicator makes an equivalent move on his GCS.
 If the games goes on forever, Duplicator wins. If one player cannot make a move, the other player wins.\(\\\)
 Output: Does Duplicator have a winning strategy?\[\\\]
+
+{{{teaser_end}}}
 
 This game has variants:\(\\\)
 

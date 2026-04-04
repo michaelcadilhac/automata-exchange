@@ -1,7 +1,7 @@
 #+TITLE: 23.4 Bounds on the length of a coverability path in VASS
 #+AUTHOR: Wojciech Czerwiński
 #+EMAIL: wczerwin@mimuw.edu.pl
-#+DATE: <2024-04-22>
+#+DATE: <2023-07-01 01:14:00>
 #+LAYOUT: post
 #+TAGS: reachability, vass, pushdown
 

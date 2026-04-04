@@ -1,7 +1,7 @@
 #+TITLE: 24.16 Speed of victory in adversarial population games
 #+AUTHOR: Corto Mascle 
 #+EMAIL: corto.mascle@labri.fr 
-#+DATE: 2024-07-12
+#+DATE: <2024-07-01 01:26:00>
 #+LAYOUT: post
 #+TAGS: automata, parameterized games
 

@@ -1,7 +1,7 @@
 #+TITLE: 20.8 Good games for good-for-games automata
 #+AUTHOR: Karoliina Lehtinen
 #+EMAIL: karoliina.lehtinen@gmail.com
-#+DATE: <2020-08-03 Mon>
+#+DATE: <2020-07-01 01:18:00>
 #+LAYOUT: post
 #+TAGS: games, infinite words, automata
 

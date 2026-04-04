@@ -1,7 +1,7 @@
 #+TITLE: 22.16 Is Markov reachability problem Skolem-Hard for Ergodic Markov chains?
 #+AUTHOR: S. Akshay
 #+EMAIL: akshayss@cse.iitb.ac.in
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:25:00>
 #+LAYOUT: post
 #+TAGS: Skolem problem, Markov chains
 

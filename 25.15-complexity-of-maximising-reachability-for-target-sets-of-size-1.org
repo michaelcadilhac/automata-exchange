@@ -1,7 +1,7 @@
 #+TITLE: 25.15 Complexity of Maximising reachability for target sets of size 1
 #+AUTHOR: Sougata Bose
 #+EMAIL: sougata.bose@umons.ac.be
-#+DATE: <2025-07-07>
+#+DATE: <2025-07-01 01:25:00>
 #+LAYOUT: post
 #+TAGS: games on graphs, reachability
 

@@ -1,7 +1,7 @@
 #+TITLE: 23.5 Linear loop synthesis: When d variables are not enough.
 #+AUTHOR: Anton Varonka
 #+EMAIL: anton.varonka@tuwien.ac.at
-#+DATE: <2023-08-09>
+#+DATE: <2023-07-01 01:15:00>
 #+LAYOUT: post
 #+TAGS: linear dynamical systems, invariants, algebra
 

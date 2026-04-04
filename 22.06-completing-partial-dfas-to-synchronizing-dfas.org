@@ -1,7 +1,7 @@
 #+TITLE: 22.6 Completing Partial DFAs to Synchronizing DFAs
 #+AUTHOR: Petra Wolf
 #+EMAIL: wolfp@informatik.uni-trier.de
-#+DATE: <2022-09-16 Fri>
+#+DATE: <2022-07-01 01:16:00>
 #+LAYOUT: post
 #+TAGS: automata
 

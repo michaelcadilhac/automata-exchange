@@ -1,7 +1,7 @@
 #+TITLE: 20.1 Universality of letter-bounded CFLs
 #+AUTHOR: Moses Ganardi
 #+EMAIL: ganardi@mpi-sws.org
-#+DATE: <2020-07-21 Tue>
+#+DATE: <2020-07-01 01:11:00>
 #+LAYOUT: post
 #+TAGS: context-free grammars, pushdown automata, complexity
 

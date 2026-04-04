@@ -1,7 +1,7 @@
 #+TITLE: 19.12 Reachability for bounded branching VASS
 #+AUTHOR: Filip Mazowiecki
 #+EMAIL: filip.mazowiecki@u-bordeaux.fr
-#+DATE: <2019-07-18 19:12>
+#+DATE: <2019-07-01 01:21:00>
 #+LAYOUT: post
 #+TAGS: counter machines, VASS, complexity, reachability
 

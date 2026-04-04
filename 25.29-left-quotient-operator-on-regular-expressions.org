@@ -1,7 +1,7 @@
 #+TITLE: 25.29 Left quotient operator on regular expressions
 #+AUTHOR: Ekaterina Zhuchko
 #+EMAIL: ekzhuc@taltech.ee
-#+DATE: <2025-07-14>
+#+DATE: <2025-07-01 01:39:00>
 #+LAYOUT: post
 #+TAGS: automata, left quotients
 

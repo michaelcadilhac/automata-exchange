@@ -1,7 +1,7 @@
 #+TITLE: 19.16 Weak validation of tree-languages by extended automata
 #+AUTHOR: Charles Paperman
 #+EMAIL: charles.paperman@univ-lille.fr
-#+DATE: <2019-07-18 19:16>
+#+DATE: <2019-07-01 01:25:00>
 #+LAYOUT: post
 #+TAGS: XML, automata, trees
 

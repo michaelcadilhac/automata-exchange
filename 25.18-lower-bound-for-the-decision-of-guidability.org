@@ -1,7 +1,7 @@
 #+TITLE: 25.18 Lower-bound for the decision of guidability
 #+AUTHOR: Olivier Idir
 #+EMAIL: idir@irif.fr
-#+DATE: <2025-07-04>
+#+DATE: <2025-07-01 01:28:00>
 #+LAYOUT: post
 #+TAGS: tree automata, complexity, simulation
 
@@ -11,6 +11,8 @@ Guidable automata are a subclass of parity tree automata introduced by Colcombet
 2) For every accepting run \(\rho\) of \(B\) over a tree \(t\), \(g_B(\rho)\) is an accepting run of \(A\) over \(t\), where \(g_B(\rho) = \rho'\) is the unique run such that \(\rho'(\varepsilon) = q_0\) , and for all \(u \in \{0,1\}^∗\), \((\rho' (u), t(u), \rho' (u0), \rho'(u1)) = g_B(ρ' (u), (\rho(u), t(u), \rho(u0), \rho(u1)))\).\[\\\]
 
 In that case, we say that \(B\) guides \(A\). \[\]
+
+{{{teaser_end}}}
 
 Guidable automate can be seen as some kind of extension of History Deterministic automata to tree languages. They also seem to have a strong link with the Mostowski index problem, that is, the minimal index required to recognize a tree language with a parity automaton.
 

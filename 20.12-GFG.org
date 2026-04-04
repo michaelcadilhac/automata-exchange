@@ -1,7 +1,7 @@
 #+TITLE: 20.12 Succinctness of GFG pushdown automata
 #+AUTHOR: Martin Zimmermann
 #+EMAIL: Martin.Zimmermann@liverpool.ac.uk
-#+DATE: <2020-11-03 Tue>
+#+DATE: <2020-07-01 01:22:00>
 #+LAYOUT: post
 #+TAGS: pushdown automata, CFL, games
 

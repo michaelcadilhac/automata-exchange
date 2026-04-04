@@ -1,7 +1,7 @@
 #+TITLE: 24.19 Reachability in Reversible Data VASS
 #+AUTHOR: Arka Ghosh
 #+EMAIL: a.ghosh@uw.edu.pl
-#+DATE: <2024-07-14>
+#+DATE: <2024-07-01 01:29:00>
 #+LAYOUT: post
 #+TAGS: algebra, automata, VASS
 
